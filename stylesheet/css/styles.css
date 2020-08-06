@@ -1,0 +1,117 @@
+/*Font size*/
+/* Breakpoint sizes */
+h1 {
+  font-size: 3rem;
+}
+@media only screen and (min-width: 20rem) and (max-width: 47.9375rem) {
+  h1 {
+    font-size: 1.75rem;
+  }
+}
+@media only screen and (min-width: 48rem) and (max-width: 64rem) {
+  h1 {
+    font-size: 2.25rem;
+  }
+}
+@media only screen and (min-width: 64rem) and (max-width: 79.9375rem) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+@media only screen and (min-width: 20rem) and (max-width: 47.9375rem) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 48rem) and (max-width: 64rem) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 64rem) and (max-width: 79.9375rem) {
+  h2 {
+    font-size: 2.25rem;
+  }
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+@media only screen and (min-width: 20rem) and (max-width: 47.9375rem) {
+  h3 {
+    font-size: 1.25rem;
+  }
+}
+@media only screen and (min-width: 48rem) and (max-width: 64rem) {
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 64rem) and (max-width: 79.9375rem) {
+  h3 {
+    font-size: 1.75rem;
+  }
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+@media only screen and (min-width: 20rem) and (max-width: 47.9375rem) {
+  h4 {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 48rem) and (max-width: 64rem) {
+  h4 {
+    font-size: 1.25rem;
+  }
+}
+@media only screen and (min-width: 64rem) and (max-width: 79.9375rem) {
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+@media only screen and (min-width: 20rem) and (max-width: 47.9375rem) {
+  h5 {
+    font-size: 0.875rem;
+  }
+}
+@media only screen and (min-width: 48rem) and (max-width: 64rem) {
+  h5 {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 64rem) and (max-width: 79.9375rem) {
+  h5 {
+    font-size: 1.25rem;
+  }
+}
+
+h6 {
+  font-size: 1.125rem;
+}
+@media only screen and (min-width: 20rem) and (max-width: 47.9375rem) {
+  h6 {
+    font-size: 0.75rem;
+  }
+}
+@media only screen and (min-width: 48rem) and (max-width: 64rem) {
+  h6 {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 64rem) and (max-width: 79.9375rem) {
+  h6 {
+    font-size: 1.125rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

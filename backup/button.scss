@@ -1,0 +1,162 @@
+@import '_variable.scss';
+@import '_button.scss';
+
+
+@mixin breakpoint($media) {
+  @if $media == xs {
+    @media only screen and (min-width: $mobile-width-min) and (max-width: $mobile-width-max) { @content; }
+  }
+  @else if $media == sm {
+    @media only screen and (min-width: $tablet-width-min) and (max-width: $desktop-width) { @content; }
+  }
+  @else if $media == md {
+    @media only screen and (min-width: $desktop-width) and (max-width: $desktop-width-min) { @content; }
+  }
+}
+.outline-btn{
+	border: 1px solid $primary;
+	padding: 16px 32px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 22px;
+	color: $primary;
+	border-radius: 4px;
+	outline: none;
+	&:hover{
+		background-color :$primary;
+		color :$white;
+	}
+	&.md{
+		font-size: 14px;
+		padding: 12px 24px;
+	}
+	&.sm{
+		font-size: 12px;
+		padding: 8px 16px;
+	}
+	@include breakpoint(xs) {
+	    padding: 10px 17px;
+	    font-size: 14px;
+		line-height: 14px;
+		font-weight: 500;
+
+	  }
+	  
+	  
+	  @include breakpoint(sm) {
+	    padding: 13px 32px;
+	    font-size: 16px;
+		line-height: 19px;
+		font-weight: 500;
+	  }
+}
+.text-btn{
+	border: none;
+	padding: 16px 32px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 22px;
+	color: $primary;
+	&:hover{
+		color :$primaryHover;
+	}
+	&.md{
+		font-size: 14px;
+		padding: 12px 24px;
+	}
+	&.sm{
+		font-size: 12px;
+		padding: 8px 16px;
+	}
+	@include breakpoint(xs) {
+	    padding: 10px 17px;
+	    font-size: 14px;
+		line-height: 14px;
+		font-weight: 500;
+
+	  }
+	  
+	  
+	  @include breakpoint(sm) {
+	    padding: 13px 32px;
+	    font-size: 16px;
+		line-height: 19px;
+		font-weight: 500;
+	  }
+}
+.primary-btn{
+	background-color: $primary;
+	padding: 16px 32px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 22px;
+	color: $white;
+	border-radius: 4px;
+	position: relative;
+	transition: all 0.2s ease-in-out;
+	overflow: hidden;
+	outline: none;
+	&.md{
+		font-size: 14px;
+		padding: 12px 24px;
+	}
+	&.sm{
+		font-size: 12px;
+		padding: 8px 16px;
+	}
+	&:hover{
+		background-color :$primaryHover;
+		color: $white;
+	}
+	&::before, &::after{
+	    position: absolute;
+	    content: '';
+	    width: 0px;
+	    height: 0px;
+	    bottom: 50%;
+	    left: 50%;
+	    border-radius: 50%;
+	    background-color: rgba(0, 0, 0, 0.15);
+	}
+	&:active {
+	  background-color: $primaryHover;
+	  background-size: 100%;
+	  transition: background 0s;
+	  }
+	  &:focus:not(:active){
+	    &::before{
+	      animation: ripple 0.4s ease-in-out;
+	    }
+	    &::after{
+	      animation: ripple 0.7s ease-in-out;
+	    }
+	    @keyframes ripple {
+		  from {
+		    width: 0px;
+		    height: 0px;
+		  }
+		  to {
+		    width: 120px;
+		    height: 120px;
+		    transform: translate(-60px, 60px);
+		  }
+		}
+	  }  	  
+	
+	
+	@include breakpoint(xs) {
+	    padding: 10px 17px;
+	    font-size: 14px;
+		line-height: 14px;
+		font-weight: 500;
+
+	  }
+	  
+	  
+	  @include breakpoint(sm) {
+	    padding: 13px 32px;
+	    font-size: 16px;
+		line-height: 19px;
+		font-weight: 500;
+	  }
+}

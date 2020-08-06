@@ -1,0 +1,82 @@
+@import '_variable.scss';
+
+.box{
+  display: inline-block;
+  width: 60px;
+  height: 60px;  
+}
+.highlight {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #f8f9fa;
+}
+.bd-example {
+    position: relative;
+    padding: 1rem;
+    margin: 1rem 0 0;
+    border: solid #f8f9fa;
+    border-width: .2rem 0 0;
+    border-width: .2rem;
+}
+/*Color code disply*/
+.primary{
+  color: $primary;
+}
+.success{
+  color: $success;
+}
+.alert{
+  color: $alert;
+}
+.error{
+  color: $error;
+}
+.black{
+  color: $black;
+}
+.lightblack{
+  color: $lightblack;
+}
+.darkgray{
+  color: $darkgray;
+}
+.lightgray{
+  color: $lightgray;
+}
+.gray{
+  color: $gray;
+}
+.white{
+  color: $white;
+}
+.lightwhite{
+  color: $lightwhite;
+}
+.purple{
+  color: $purple;
+}
+.seaGreen{
+  color: $seaGreen;
+}
+.spoltlessRed{
+  color: $spoltlessRed;
+}
+.beauBlue{
+  color: $beauBlue;
+}
+
+.primaryGradient{
+  background: $primaryGradient;
+}
+.yellowGradient{
+  background: $yellowGradient;
+}
+.redGradient{
+  background: $redGradient;
+}
+.greenGradient{
+  background: $greenGradient;
+}
+.lightblueGradient{
+  background: $lightblueGradient;
+}

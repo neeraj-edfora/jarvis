@@ -1,0 +1,79 @@
+$base-size: 16;
+@function size($target, $context: $base-size) {  @return ($target / $context) * 1rem;}
+
+
+$primary: #1D7DEA;
+$success: #30BE76;
+$alert: #FFCC00;
+$error: #F21D1D;
+$black: #333;
+$lightblack: #666;
+$darkgray: #999;
+$lightgray: #666;
+$gray: #d2d2d2;
+$white: #fff;
+$lightwhite: #f7f7f7;
+$purple: #9F37AE;
+$seaGreen: #609B93;
+$spoltlessRed: #FF7675;
+$beauBlue: #cae5ff;
+$primaryGradient: linear-gradient(180deg, #2594F5 -12.92%, #0B5FCB 53.75%);
+$yellowGradient: linear-gradient(180deg, #FF850B 0%, #FFBF45 100%);
+$redGradient: linear-gradient(180deg, #FA4F4F 0%, rgba(250, 153, 79, 0.58) 100%);
+$greenGradient:  linear-gradient(180deg, #0BB382 0%, #25CEDA 100%);
+$lightblueGradient: linear-gradient(90deg, #2E93FB 0%, #29CAD1 116.01%);
+
+$primaryHover: #0366D7;
+
+/*Font size*/
+$font-10: size(10);
+$font-12: size(12);
+$font-14: size(14);
+$font-16: size(16);
+$font-18: size(18);
+$font-20: size(20);
+$font-22: size(22);
+$font-24: size(24);
+$font-26: size(26);
+$font-28: size(28);
+$font-30: size(30);
+$font-32: size(32);
+$font-34: size(34);
+$font-36: size(36);
+$font-38: size(38);
+$font-40: size(40);
+$font-42: size(42);
+$font-44: size(44);
+$font-46: size(46);
+$font-48: size(48);
+$font-50: size(50);
+
+/* Breakpoint sizes */
+$screen320: size(320);
+$screen359: size(359);
+$screen399: size(399);
+$screen400: size(400);
+$screen479: size(479);
+$screen599: size(599);
+$screen719: size(719);
+$screen839: size(839);
+$screen959: size(959);
+$screen1023: size(1023);
+$screen1279: size(1279);
+$screen1439: size(1439);
+$screen1599: size(1599);
+$screen1919: size(1919);
+
+$mobile-width-min: size(320);
+$mobile-width-max: size(767);
+$tablet-width-min: size(768);
+$desktop-width: size(1024);
+$desktop-width-min: size(1279);
+
+
+$mobile-width-min: size(320);
+$mobile-width-max: size(767);
+$tablet-width-min: size(768);
+$desktop-width: size(1024);
+$desktop-width-min: size(1279);
+

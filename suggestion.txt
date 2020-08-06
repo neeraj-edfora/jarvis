@@ -1,0 +1,14 @@
+3kzr3rbwgq
+
+1. add black shade on (Raise your Grade) --- done
+2. first fold black shade height reduce, deadline date not working --- done
+3. online education assistance section alignment --- done
+4. button hover effect --- done
+5. online education assistance heading and button gap reduce --- done
+6. testimonial star gap increase --- done
+7. subscribe email icon color change --- done
+8. Check text from design --- done
+9. add navigation text more ---done
+10. remove tooltip from menu --- done
+11. menu hover text color white --- Changed hover color - Done
+12. 

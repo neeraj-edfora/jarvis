@@ -1,0 +1,119 @@
+.outline-btn {
+  border: 1px solid #1D7DEA;
+  padding: 16px 32px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1D7DEA;
+  border-radius: 4px;
+  outline: none; }
+  .outline-btn:hover {
+    background-color: #1D7DEA;
+    color: #fff; }
+  .outline-btn.md {
+    font-size: 14px;
+    padding: 12px 24px; }
+  .outline-btn.sm {
+    font-size: 12px;
+    padding: 8px 16px; }
+  @media only screen and (min-width: 20rem) and (max-width: 47.9375rem) {
+    .outline-btn {
+      padding: 10px 17px;
+      font-size: 14px;
+      line-height: 14px;
+      font-weight: 500; } }
+  @media only screen and (min-width: 48rem) and (max-width: 64rem) {
+    .outline-btn {
+      padding: 13px 32px;
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: 500; } }
+
+.text-btn {
+  border: none;
+  padding: 16px 32px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1D7DEA; }
+  .text-btn:hover {
+    color: #0366D7; }
+  .text-btn.md {
+    font-size: 14px;
+    padding: 12px 24px; }
+  .text-btn.sm {
+    font-size: 12px;
+    padding: 8px 16px; }
+  @media only screen and (min-width: 20rem) and (max-width: 47.9375rem) {
+    .text-btn {
+      padding: 10px 17px;
+      font-size: 14px;
+      line-height: 14px;
+      font-weight: 500; } }
+  @media only screen and (min-width: 48rem) and (max-width: 64rem) {
+    .text-btn {
+      padding: 13px 32px;
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: 500; } }
+
+.primary-btn {
+  background-color: #1D7DEA;
+  padding: 16px 32px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+  border-radius: 4px;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+  outline: none; }
+  .primary-btn.md {
+    font-size: 14px;
+    padding: 12px 24px; }
+  .primary-btn.sm {
+    font-size: 12px;
+    padding: 8px 16px; }
+  .primary-btn:hover {
+    background-color: #0366D7;
+    color: #fff; }
+  .primary-btn::before, .primary-btn::after {
+    position: absolute;
+    content: '';
+    width: 0px;
+    height: 0px;
+    bottom: 50%;
+    left: 50%;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.15); }
+  .primary-btn:active {
+    background-color: #0366D7;
+    background-size: 100%;
+    transition: background 0s; }
+  .primary-btn:focus:not(:active)::before {
+    animation: ripple 0.4s ease-in-out; }
+  .primary-btn:focus:not(:active)::after {
+    animation: ripple 0.7s ease-in-out; }
+@keyframes ripple {
+  from {
+    width: 0px;
+    height: 0px; }
+  to {
+    width: 120px;
+    height: 120px;
+    transform: translate(-60px, 60px); } }
+  @media only screen and (min-width: 20rem) and (max-width: 47.9375rem) {
+    .primary-btn {
+      padding: 10px 17px;
+      font-size: 14px;
+      line-height: 14px;
+      font-weight: 500; } }
+  @media only screen and (min-width: 48rem) and (max-width: 64rem) {
+    .primary-btn {
+      padding: 13px 32px;
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: 500; } }
+
+/*# sourceMappingURL=button.css.map */

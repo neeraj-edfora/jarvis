@@ -1,0 +1,132 @@
+// @import '_variable.scss';
+
+
+
+@mixin breakpoint($media) {
+	@if $media==xs {
+		@media only screen and (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+			@content;
+		}
+	}
+
+	@else if $media==sm {
+		@media only screen and (min-width: $tablet-width-min) and (max-width: $desktop-width) {
+			@content;
+		}
+	}
+
+	@else if $media==md {
+		@media only screen and (min-width: $desktop-width) and (max-width: $desktop-width-min) {
+			@content;
+		}
+	}
+}
+
+
+h1 {
+	font-size: $font-48;
+
+	@include breakpoint(xs) {
+		font-size: $font-28;
+	}
+
+
+	@include breakpoint(sm) {
+		font-size: $font-36;
+	}
+
+
+	@include breakpoint(md) {
+		font-size: $font-48;
+	}
+}
+
+h2 {
+	font-size: $font-36;
+
+	@include breakpoint(xs) {
+		font-size: $font-24;
+	}
+
+
+	@include breakpoint(sm) {
+		font-size: $font-32;
+	}
+
+
+	@include breakpoint(md) {
+		font-size: $font-36;
+	}
+}
+
+h3 {
+	font-size: $font-28;
+
+	@include breakpoint(xs) {
+		font-size: $font-20;
+	}
+
+
+	@include breakpoint(sm) {
+		font-size: $font-24;
+	}
+
+
+	@include breakpoint(md) {
+		font-size: $font-28;
+	}
+}
+
+h4 {
+	font-size: $font-24;
+
+	@include breakpoint(xs) {
+		font-size: $font-16;
+	}
+
+
+	@include breakpoint(sm) {
+		font-size: $font-20;
+	}
+
+
+	@include breakpoint(md) {
+		font-size: $font-24;
+	}
+}
+
+h5 {
+	font-size: $font-20;
+
+	@include breakpoint(xs) {
+		font-size: $font-14;
+	}
+
+
+	@include breakpoint(sm) {
+		font-size: $font-16;
+	}
+
+
+	@include breakpoint(md) {
+		font-size: $font-20;
+	}
+}
+
+h6 {
+	font-size: $font-18;
+
+	@include breakpoint(xs) {
+		font-size: $font-12;
+	}
+
+
+	@include breakpoint(sm) {
+		font-size: $font-16;
+	}
+
+
+	@include breakpoint(md) {
+		font-size: $font-18;
+	}
+}

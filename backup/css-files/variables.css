@@ -1,0 +1,80 @@
+.box {
+  display: inline-block;
+  width: 60px;
+  height: 60px; }
+
+.highlight {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #f8f9fa; }
+
+.bd-example {
+  position: relative;
+  padding: 1rem;
+  margin: 1rem 0 0;
+  border: solid #f8f9fa;
+  border-width: .2rem 0 0;
+  border-width: .2rem; }
+
+/*Color code disply*/
+.primary {
+  color: #1D7DEA; }
+
+.success {
+  color: #30BE76; }
+
+.alert {
+  color: #FFCC00; }
+
+.error {
+  color: #F21D1D; }
+
+.black {
+  color: #333; }
+
+.lightblack {
+  color: #666; }
+
+.darkgray {
+  color: #999; }
+
+.lightgray {
+  color: #666; }
+
+.gray {
+  color: #d2d2d2; }
+
+.white {
+  color: #fff; }
+
+.lightwhite {
+  color: #f7f7f7; }
+
+.purple {
+  color: #9F37AE; }
+
+.seaGreen {
+  color: #609B93; }
+
+.spoltlessRed {
+  color: #FF7675; }
+
+.beauBlue {
+  color: #cae5ff; }
+
+.primaryGradient {
+  background: linear-gradient(180deg, #2594F5 -12.92%, #0B5FCB 53.75%); }
+
+.yellowGradient {
+  background: linear-gradient(180deg, #FF850B 0%, #FFBF45 100%); }
+
+.redGradient {
+  background: linear-gradient(180deg, #FA4F4F 0%, rgba(250, 153, 79, 0.58) 100%); }
+
+.greenGradient {
+  background: linear-gradient(180deg, #0BB382 0%, #25CEDA 100%); }
+
+.lightblueGradient {
+  background: linear-gradient(90deg, #2E93FB 0%, #29CAD1 116.01%); }
+
+/*# sourceMappingURL=variables.css.map */
