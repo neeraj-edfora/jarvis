@@ -1,9 +1,13 @@
-# jarvis
+# Jarvis
 
-For watch whole directory
+Sass Commands
 
-#sass --watch stylesheet/sass/styles.scss stylesheet/css/styles.css
+## For watch whole directory
+```bash
+sass --watch stylesheet/sass/styles.scss stylesheet/css/styles.css
+```
 
-For Complile
-
-#sass stylesheet/sass/styles.scss stylesheet/css/styles.css   
+## For Complile
+```bash
+sass stylesheet/sass/styles.scss stylesheet/css/styles.css  
+```
