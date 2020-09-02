@@ -1,0 +1,277 @@
+$base-size: 16;
+
+@function size($target, $context: $base-size) {
+  @return ($target / $context) * 1rem;
+}
+
+
+$red: #F21D1D;
+$lightblack: #666;
+$darkgray: #999;
+$lightgray: #666;
+$gray: #d2d2d2;
+$white: #fff;
+$lightwhite: #f7f7f7;
+$purple: #9F37AE;
+$seaGreen: #609B93;
+$spoltlessRed: #FF7675;
+$beauBlue: #cae5ff;
+$lightBlue: #E9F4FF;
+$color-primaryGradient: linear-gradient(180deg, #2594F5 -12.92%, #0B5FCB 53.75%);
+$yellowGradient: linear-gradient(180deg, #FF850B 0%, #FFBF45 100%);
+$redGradient: linear-gradient(180deg, #FA4F4F 0%, rgba(250, 153, 79, 0.58) 100%);
+$greenGradient: linear-gradient(180deg, #0BB382 0%, #25CEDA 100%);
+$lightblueGradient: linear-gradient(90deg, #2E93FB 0%, #29CAD1 116.01%);
+
+$color-primary-hover: #0366D7;
+
+
+
+/*Variable For Font Size*/
+$font-large: size(18);
+$font-primary: size(16);
+$font-secondary: size(14);
+$font-small: size(12);
+$font-h1: size(48);
+$font-h2: size(36);
+$font-h3: size(32);
+$font-h4: size(28);
+$font-h5: size(24);
+$font-h6: size(20);
+
+/*Variable For Colors*/
+$color-primary: #1D7DEA;
+$color-success: #30BE76;
+$color-alert: #FFCC00;
+$color-error: #F21D1D;
+$color-primary-Hover: #0366D7;
+
+$black-base: #333;
+$lightblack: #666;
+$darkgray: #999;
+$lightgray: #666;
+$gray: #d2d2d2;
+$white: #fff;
+$lightwhite: #f7f7f7;
+$purple: #9F37AE;
+$seaGreen: #609B93;
+$spoltlessRed: #FF7675;
+$beauBlue: #cae5ff;
+$disabled: #92C5FE;
+
+/*Global textual link color.*/
+$link-color: $color-primary;
+/* Link hover color */
+$link-hover-color: $color-primary-hover;
+/* Link hover decoration.*/
+$link-hover-decoration: underline;
+
+/*Variable For Border Radius */
+$border-radius-large: size(20);
+$border-radius-medium: size(16);
+$border-radius-small: size(4);
+
+/* Variable For Buttons */
+$btn-primary-color: $white;
+$btn-primary-bg: $color-primary;
+$btn-primary-border: $btn-primary-bg;
+
+$btn-secondary-color: $color-primary;
+$btn-secondary-bg: $white;
+
+/*global css starts here*/
+%ulDefault {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+%m0-p0 {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Breakpoint sizes */
+$mobile-width-min: size(320);
+$mobile-width-max: size(767);
+$tablet-width-min: size(768);
+$desktop-width: size(1024);
+$desktop-width-min: size(1279);
+
+
+$full-width: 100% !important;
+$font-12: 12px;
+$font-14: 14px;
+$font-16: 16px;
+$font-18: 18px;
+$font-20: 20px;
+$font-24: 24px;
+$font-28: 28px;
+$font-32: 32px;
+$font-36: 36px;
+$font-48: 48px;
+
+$c-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
+$small-text: #FF0909;
+$redbadge: #E84D4D;
+$bcolor: #67BF02;
+$dot: #C4C4C4;
+$footer: #DCEDFF;
+$prodsteel: linear-gradient(145.6deg, #48C9D2 2.68%, #28B4B4 84.24%);
+$prodppurple: linear-gradient(145.29deg, #8D51CA 0%, #732FB7 100%);
+$prodgreen: linear-gradient(150.98deg, #A6B783 0%, #788C4E 71.02%);
+
+
+/*Font size*/
+$size-4: size(4);
+$size-6: size(6);
+$size-7: size(7);
+$size-8: size(8);
+$size-10: size(10);
+$size-12: size(12);
+$size-14: size(14);
+$size-16: size(16);
+$size-18: size(18);
+$size-20: size(20);
+$size-21: size(21);
+$size-22: size(22);
+$size-24: size(24);
+$size-26: size(26);
+$size-28: size(28);
+$size-30: size(30);
+$size-32: size(32);
+$size-34: size(34);
+$size-36: size(36);
+$size-38: size(38);
+$size-40: size(40);
+$size-42: size(42);
+$size-44: size(44);
+$size-46: size(46);
+$size-48: size(48);
+$size-50: size(50);
+
+/* Breakpoint sizes */
+$screen320: size(320);
+$screen359: size(359);
+$screen399: size(399);
+$screen400: size(400);
+$screen479: size(479);
+$screen599: size(599);
+$screen719: size(719);
+$screen839: size(839);
+$screen959: size(959);
+$screen1023: size(1023);
+$screen1279: size(1279);
+$screen1439: size(1439);
+$screen1599: size(1599);
+$screen1919: size(1919);
+
+$mobile-width-min: size(320);
+$mobile-width-max: size(767);
+$tablet-width-min: size(768);
+$desktop-width: size(1024);
+$desktop-width-max: size(1279);
+
+$popup-shadow: 0px 3px 8px rgba(0, 0, 0, 0.11);
+$radius: 0px 0px 8px 8px;
+$scrollbg: #EFEDED;
+$scrollBar: #C2C2C2;
+
+$paginationbg: rgba(29, 125, 234, 0.08);
+
+$blue: #345F90;
+$sliderbg: rgba(153, 153, 153, 0.2);
+
+$chips-bg: rgba(153, 153, 153, 0.2);
+$chips-hover: #D8D8D8;
+
+$shaddow: 0px 5px 14px rgba(0, 0, 0, 0.12);
+$border-color: #E7E7E7;
+$line-radius: 5px;
+$color-success-color:#21A67A;
+$warning-color: #F1C232;
+
+$bg-color: #333;
+
+$calculate: 5px;
+
+/*Color code disply*/
+.primary {
+  color: $color-primary;
+}
+
+.success {
+  color: $color-success;
+}
+
+.alert {
+  color: $color-alert;
+}
+
+.error {
+  color: $red;
+}
+
+.black {
+  color: $black-base;
+}
+
+.lightblack {
+  color: $lightblack;
+}
+
+.darkgray {
+  color: $darkgray;
+}
+
+.lightgray {
+  color: $lightgray;
+}
+
+.gray {
+  color: $gray;
+}
+
+.white {
+  color: $white;
+}
+
+.lightwhite {
+  color: $lightwhite;
+}
+
+.purple {
+  color: $purple;
+}
+
+.seaGreen {
+  color: $seaGreen;
+}
+
+.spoltlessRed {
+  color: $spoltlessRed;
+}
+
+.beauBlue {
+  color: $beauBlue;
+}
+
+.primaryGradient {
+  background: $color-primaryGradient;
+}
+
+.yellowGradient {
+  background: $yellowGradient;
+}
+
+.redGradient {
+  background: $redGradient;
+}
+
+.greenGradient {
+  background: $greenGradient;
+}
+
+.lightblueGradient {
+  background: $lightblueGradient;
+}

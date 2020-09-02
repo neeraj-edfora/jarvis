@@ -143,20 +143,24 @@
 			<div class="px-3 py-4 position-relative">
 				<h4 class="heading">Components</h4>
 				<ul class="sidebar__list--menu mt-3">
-					<li><a href="accordian.html" class="active">Accordian</a></li>
-					<li><a href="alert.html" class="">Alert</a></li>
+					<!-- <li><a href="accordian.html" class="active">Accordian</a></li> -->
+					<!-- <li><a href="alert.html" class="">Alert</a></li> -->
 					<li><a href="buttons.html" class="">Buttons</a></li>
 					<li><a href="color.html" class="">Color</a></li>
 					<li><a href="card.html" class="">Card</a></li>
 					<li><a href="casousel.html" class="">Carousel</a></li>
-					<li><a href="dropdown.html" class="">Dropdown</a></li>
+					<!-- <li><a href="dropdown.html" class="">Dropdown</a></li> -->
+					<li><a href="empty.html" class="">Empty State</a></li>
 					<li><a href="heading.html" class="">Heading</a></li>
 					<li><a href="input.html" class="">Inputs</a></li>
-					<li><a href="navigation.html" class="">Navigation</a></li>
+					<!-- <li><a href="navigation.html" class="">Navigation</a></li>	 -->
+					<li><a href="popup.html" class="">Popup</a></li>
+					<li><a href="bread-pagination.html" class="">Paginatin and Breadcrumbs</a></li>
 					<li><a href="progress-bar.html" class="">Progress bar</a></li>
 					<li><a href="tabs.html" class="">Tabs</a></li>
+					<li><a href="tag-chips.html" class="">Tags and Chips</a></li>
 					<li><a href="toaster.html" class="">Toaster Alert</a></li>
-					<li><a href="tooltip" class="">Tooltip</a></li>
+					<li><a href="tooltip.html" class="">Tooltip</a></li>
 
 				</ul>
 			</div>
@@ -169,12 +173,11 @@
 			</nav>
 			<section class="pt-0 px-3 designsection accordian">
 				<div class="col-md-11">
-					<h1>Progress Bar</h1>
+					<h1>Tab</h1>
 
 					<div class="position-relative" id="#p1">
 						<ul class="nav nav-tabs">
 							<li class="active"><a data-toggle="tab" href="#design">Design</a></li>
-							<li><a data-toggle="tab" href="#html">HTML</a></li>
 							<li><a data-toggle="tab" href="#css">CSS</a></li>
 							<li><a data-toggle="tab" href="#scss">SCSS</a></li>
 							<li><a data-toggle="tab" href="#nghtml">NG HTML</a></li>
@@ -184,16 +187,88 @@
 						<div class="tab-content">
 							<div id="design" class="tab-pane fade in active show">
 								<div class="bd-example">
-									<img src="img/progressbar.gif" alt="accordian" title="accordian" width="500">
-								</div>
-							</div>
-							<div id="html" class="tab-pane fade">
-								<figure class="bd-example">
-									<pre>No data</pre>
-									<div class="copyContent">
-										<a href="#!" onclick="copyToClipboard('#p1')">Copy</a>
+									<div class="mtab">
+										<div class="tab-menu">
+											<ul>
+												<li><a href="#" class="tab-a active-a" data-id="tab1">TAB-1</a></li>
+												<li><a href="#" class="tab-a" data-id="tab2">TAB-2</a></li>
+												<li><a href="#" class="tab-a" data-id="tab3">TAB-3</a></li>
+											</ul>
+										</div>
+										<div class="tab tab-active" data-id="tab1">
+											<h2>heading of tab one</h2>
+											<p>Content of tab one</p>
+										</div>
+										<div class="tab " data-id="tab2">
+											<h2>heading of tab two</h2>
+											<p>Content of tab two</p>
+										</div>
+										<div class="tab " data-id="tab3">
+											<h2>heading of tab three</h2>
+											<p>Content of tab three</p>
+										</div>
 									</div>
-								</figure>
+								</div>
+								<div class="highlight">
+									<pre>&lt;div class=&quot;mtab&quot;&gt;</pre>
+									<pre>&lt;div class=&quot;tab-menu&quot;&gt;</pre>
+									<pre>&lt;ul&gt;</pre>
+									<pre>&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;tab-a active-a&quot; data-id=&quot;tab1&quot;&gt;TAB-1&lt;/a&gt;&lt;/li&gt;</pre>
+									<pre>&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;tab-a&quot; data-id=&quot;tab2&quot;&gt;TAB-2&lt;/a&gt;&lt;/li&gt;</pre>
+									<pre>&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;tab-a&quot; data-id=&quot;tab3&quot;&gt;TAB-3&lt;/a&gt;&lt;/li&gt;</pre>
+									<pre>&lt;/ul&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre>&lt;div  class=&quot;tab tab-active&quot; data-id=&quot;tab1&quot;&gt;</pre>
+									<pre>&lt;h2&gt;heading of tab one&lt;/h2&gt;</pre>
+									<pre>&lt;p&gt;Content of tab one&lt;/p&gt;	</pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre>&lt;div  class=&quot;tab &quot; data-id=&quot;tab2&quot;&gt;</pre>
+									<pre>&lt;h2&gt;heading of tab two&lt;/h2&gt;</pre>
+									<pre>&lt;p&gt;Content of tab two&lt;/p&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre>&lt;div  class=&quot;tab &quot; data-id=&quot;tab3&quot;&gt;</pre>
+									<pre>&lt;h2&gt;heading of tab three&lt;/h2&gt;</pre>
+									<pre>&lt;p&gt;Content of tab three&lt;/p&gt; </pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+								</div>
+								<div class="bd-example">
+									<div class="tab-slider--nav">
+										<ul class="tab-slider--tabs">
+											<li class="tab-slider--trigger active" rel="tab1">Attempts</li>
+											<li class="tab-slider--trigger" rel="tab2">Syllabus</li>
+										</ul>
+									</div>
+									<div class="tab-slider--container">
+										<div id="tab1" class="tab-slider--body">
+											<h2>First Tab</h2>
+											<p>Toggle switch 1</p>
+										</div>
+										<div id="tab2" class="tab-slider--body">
+											<h2>Second Tab</h2>
+											<p>Toggle switch 2</p>
+										</div>
+									</div>
+								</div>
+								<div class="highlight">
+									<pre>&lt;div class=&quot;tab-slider--nav&quot;&gt;</pre>
+									<pre>&lt;ul class=&quot;tab-slider--tabs&quot;&gt;</pre>
+									<pre>&lt;li class=&quot;tab-slider--trigger active&quot; rel=&quot;tab1&quot;&gt;Attempts&lt;/li&gt;</pre>
+									<pre>&lt;li class=&quot;tab-slider--trigger&quot; rel=&quot;tab2&quot;&gt;</pre>Syllabus
+									<pre>&lt;/li&gt;</pre>
+									<pre>&lt;/ul&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre>&lt;div class=&quot;tab-slider--container&quot;&gt;</pre>
+									<pre>&lt;div id=&quot;tab1&quot; class=&quot;tab-slider--body&quot;&gt;</pre>
+									<pre>&lt;h2&gt;First Tab&lt;/h2&gt;</pre>
+									<pre>&lt;p&gt;Toggle switch 1&lt;/p&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre>&lt;div id=&quot;tab2&quot; class=&quot;tab-slider--body&quot;&gt;</pre>
+									<pre>&lt;h2&gt;Second Tab&lt;/h2&gt;</pre>
+									<pre>&lt;p&gt;Toggle switch 2&lt;/p&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+								</div>
 							</div>
 							<div id="css" class="tab-pane fade">
 								<div class="bd-example">
@@ -203,6 +278,7 @@
 									</div>
 								</div>
 							</div>
+
 							<div id="scss" class="tab-pane fade">
 								<div class="bd-example">
 									<pre>No data</pre>
@@ -239,7 +315,34 @@
 		src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.0/umd/popper.min.js">
 	</script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('.tab-a').click(function () {
+				$(".tab").removeClass('tab-active');
+				$(".tab[data-id='" + $(this).attr('data-id') + "']").addClass("tab-active");
+				$(".tab-a").removeClass('active-a');
+				$(this).parent().find(".tab-a").addClass('active-a');
+			});
+		});
+		// slider tab
+		$("document").ready(function () {
+			$(".tab-slider--body").hide();
+			$(".tab-slider--body:first").show();
+		});
 
+		$(".tab-slider--nav li").click(function () {
+			$(".tab-slider--body").hide();
+			var activeTab = $(this).attr("rel");
+			$("#" + activeTab).fadeIn();
+			if ($(this).attr("rel") == "tab2") {
+				$('.tab-slider--tabs').addClass('slide');
+			} else {
+				$('.tab-slider--tabs').removeClass('slide');
+			}
+			$(".tab-slider--nav li").removeClass("active");
+			$(this).addClass("active");
+		});
+	</script>
 </body>
 
 </html>

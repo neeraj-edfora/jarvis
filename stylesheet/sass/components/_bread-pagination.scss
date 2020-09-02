@@ -1,0 +1,65 @@
+@import "../helpers/variable";
+
+.breadcrumb {
+	&.mybread {
+		background-color: transparent;
+		margin-bottom: 0;
+
+		li {
+			font-size: size(16);
+			color: $black-base;
+			font-weight: bold;
+
+			a {
+				font-size: size(16);
+				color: $lightblack;
+				font-weight: normal;
+			}
+
+			&::after {
+				padding: size(8) size(11);
+				color: black;
+				content: url(../img/arrow-right.svg);
+			}
+
+			&:last-child {
+				&::after {
+					content: "";
+				}
+			}
+		}
+	}
+}
+
+//pagination
+.pagination {
+	a {
+		color: $color-primary;
+		padding: size(6) size(10);
+		text-decoration: none;
+		font-size: size(16);
+		font-weight: bold;
+		width: size(40);
+		height: size(40);
+
+		&:hover {
+			padding: size(6) size(10);
+
+			&:not(.active) {
+				background-color: $paginationbg;
+				color: $color-primary;
+				width: size(40);
+				height: size(40);
+				border-radius: 50%;
+			}
+		}
+	}
+
+	a.active {
+		background-color: $paginationbg;
+		color: $color-primary;
+		width: size(35);
+		height: size(35);
+		border-radius: 50%;
+	}
+}

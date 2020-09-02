@@ -19,17 +19,17 @@
 				<a href="#!" class="brand__sidebar d-block text-center"><img src="./img/mypat.svg" width="80" title="myPAT" alt="myPAT"></a>
 				<h4 class="heading">Components</h4>
 				<ul class="sidebar__list--menu mt-3">
-					<li><a href="accordian.html" class="active">Accordian</a></li>
-					<li><a href="alert.html" class="">Alert</a></li>
+					<!-- <li><a href="accordian.html" class="active">Accordian</a></li> -->
+					<!-- <li><a href="alert.html" class="">Alert</a></li> -->
 					<li><a href="buttons.html" class="">Buttons</a></li>
 					<li><a href="color.html" class="">Color</a></li>
 					<li><a href="card.html" class="">Card</a></li>
 					<li><a href="casousel.html" class="">Carousel</a></li>
-					<li><a href="dropdown.html" class="">Dropdown</a></li>	
-					<li><a href="empty.html" class="">Empty State</a></li>		
+					<!-- <li><a href="dropdown.html" class="">Dropdown</a></li> -->
+					<li><a href="empty.html" class="">Empty State</a></li>							
 					<li><a href="heading.html" class="">Heading</a></li>	
 					<li><a href="input.html" class="">Inputs</a></li>	
-					<li><a href="navigation.html" class="">Navigation</a></li>	
+					<!-- <li><a href="navigation.html" class="">Navigation</a></li>	 -->
 					<li><a href="popup.html" class="">Popup</a></li>
 					<li><a href="bread-pagination.html" class="">Paginatin and Breadcrumbs</a></li>
 					<li><a href="progress-bar.html" class="">Progress bar</a></li>		
@@ -49,12 +49,11 @@
 			</nav>
 			<section class="pt-0 px-3 designsection accordian">
 				<div class="col-md-11">
-					<h1>Carousel</h1>				
+					<h1>Empty State</h1>				
 					
 					<div class="position-relative" id="#p1">
 						<ul class="nav nav-tabs">
 						  <li class="active"><a data-toggle="tab" href="#design">Design</a></li>
-						  <li><a data-toggle="tab" href="#html">HTML</a></li>
 						  <li><a data-toggle="tab" href="#css">CSS</a></li>
 						  <li><a data-toggle="tab" href="#scss">SCSS</a></li>
 						  <li><a data-toggle="tab" href="#nghtml">NG HTML</a></li>
@@ -64,16 +63,25 @@
 						<div class="tab-content">
 						  <div id="design" class="tab-pane fade in active show">
 						    <div class="bd-example">
-						    	<img src="img/slider.png" alt="accordian" title="accordian" width="500">	
+						    	<div class="emptyState">
+						    		<img src="img/404.svg">
+						    		<div class="content">
+						    			<h4>Oops, we couldn’t find any questions 😞</h4>
+						    			<p>You can ask question and find out for the answer</p>
+						    			<a href="#!" class="btn ms hover">Ask Question</a>
+						    		</div>
+						    	</div>	
 							</div>
-						  </div>
-						  <div id="html" class="tab-pane fade">
-						   <figure  class="bd-example">
-								<pre>No data</pre>
-								<div class="copyContent">
-									<a href="#!" onclick="copyToClipboard('#p1')">Copy</a>
-								</div>
-							</figure>
+							<div class="highlight">
+								<pre>&lt;div class=&quot;emptyState&quot;&gt;</pre>
+						    		<pre>&lt;img src=&quot;img/404.svg&quot;&gt;</pre>
+						    		<pre>&lt;div class=&quot;content&quot;&gt;</pre>
+						    			<pre>&lt;h4&gt;Oops, we couldn&rsquo;t find any questions 😞&lt;/h4&gt;</pre>
+						    			<pre>&lt;p&gt;You can ask question and find out for the answer&lt;/p&gt;</pre>
+						    			<pre>&lt;a href=&quot;#!&quot; class=&quot;btn ms hover&quot;&gt;Ask Question&lt;/a&gt;</pre>
+						    		<pre>&lt;/div&gt;</pre>
+						    	<pre>&lt;/div&gt;</pre>
+							</div>
 						  </div>
 						  <div id="css" class="tab-pane fade">
 						  	<div class="bd-example">
@@ -83,6 +91,7 @@
 								</div>
 							</div>
 						  </div>
+
 						  <div id="scss" class="tab-pane fade">
 						  	<div class="bd-example">
 							    <pre>No data</pre>

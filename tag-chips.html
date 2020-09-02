@@ -143,20 +143,24 @@
 			<div class="px-3 py-4 position-relative">
 				<h4 class="heading">Components</h4>
 				<ul class="sidebar__list--menu mt-3">
-					<li><a href="accordian.html" class="active">Accordian</a></li>
-					<li><a href="alert.html" class="">Alert</a></li>
+					<!-- <li><a href="accordian.html" class="active">Accordian</a></li> -->
+					<!-- <li><a href="alert.html" class="">Alert</a></li> -->
 					<li><a href="buttons.html" class="">Buttons</a></li>
 					<li><a href="color.html" class="">Color</a></li>
 					<li><a href="card.html" class="">Card</a></li>
 					<li><a href="casousel.html" class="">Carousel</a></li>
-					<li><a href="dropdown.html" class="">Dropdown</a></li>
+					<!-- <li><a href="dropdown.html" class="">Dropdown</a></li>	 -->
+					<li><a href="empty.html" class="">Empty State</a></li>
 					<li><a href="heading.html" class="">Heading</a></li>
 					<li><a href="input.html" class="">Inputs</a></li>
-					<li><a href="navigation.html" class="">Navigation</a></li>
+					<!-- <li><a href="navigation.html" class="">Navigation</a></li>	 -->
+					<li><a href="popup.html" class="">Popup</a></li>
+					<li><a href="bread-pagination.html" class="">Paginatin and Breadcrumbs</a></li>
 					<li><a href="progress-bar.html" class="">Progress bar</a></li>
 					<li><a href="tabs.html" class="">Tabs</a></li>
+					<li><a href="tag-chips.html" class="">Tags and Chips</a></li>
 					<li><a href="toaster.html" class="">Toaster Alert</a></li>
-					<li><a href="tooltip" class="">Tooltip</a></li>
+					<li><a href="tooltip.html" class="">Tooltip</a></li>
 
 				</ul>
 			</div>
@@ -169,12 +173,11 @@
 			</nav>
 			<section class="pt-0 px-3 designsection accordian">
 				<div class="col-md-11">
-					<h1>Progress Bar</h1>
+					<h1>Tags and Chips</h1>
 
 					<div class="position-relative" id="#p1">
 						<ul class="nav nav-tabs">
 							<li class="active"><a data-toggle="tab" href="#design">Design</a></li>
-							<li><a data-toggle="tab" href="#html">HTML</a></li>
 							<li><a data-toggle="tab" href="#css">CSS</a></li>
 							<li><a data-toggle="tab" href="#scss">SCSS</a></li>
 							<li><a data-toggle="tab" href="#nghtml">NG HTML</a></li>
@@ -184,28 +187,93 @@
 						<div class="tab-content">
 							<div id="design" class="tab-pane fade in active show">
 								<div class="bd-example">
-									<img src="img/progressbar.gif" alt="accordian" title="accordian" width="500">
+									<h4>Tags</h4>
+									<div class="tags primary">
+										JEE(M)
+									</div>
+									<div class="tags success">
+										JEE(M)
+									</div>
+									<div class="tags alert">
+										JEE(M)
+									</div>
+									<div class="tags purple">
+										JEE(M)
+									</div>
+									<div class="tags lightgray">
+										JEE(M)
+									</div>
+								</div>
+								<div class="highlight">
+									<pre>&lt;div class=&quot;tags primary&quot;&gt;JEE(M)&lt;/div&gt;</pre>
+									<pre>&lt;div class=&quot;tags success&quot;&gt;JEE(M)&lt;/div&gt;</pre>
+									<pre>&lt;div class=&quot;tags alert&quot;&gt;JEE(M)&lt;/div&gt;</pre>
+									<pre>&lt;div class=&quot;tags purple&quot;&gt;JEE(M)&lt;/div&gt;</pre>
+									<pre>&lt;div class=&quot;tags lightgray&quot;&gt;JEE(M)&lt;/div&gt;</pre>
+								</div>
+								<!--  -->
+								<div class="bd-example">
+									<h4>Tags with icon</h4>
+									<div class="tags primary">
+										JEE(M) <a href="#!">&times;</a>
+									</div>
+									<div class="tags success">
+										JEE(M) &plus;
+									</div>
+									<div class="tags alert">
+										JEE(M) &times;
+									</div>
+									<div class="tags purple">
+										JEE(M) &plus;
+									</div>
+									<div class="tags lightgray">
+										JEE(M) &times;
+									</div>
+								</div>
+								<div class="highlight">
+									<pre>&lt;div class=&quot;tags primary&quot;&gt;JEE(M) &amp;times;&lt;/div&gt;</pre>
+									<pre>&lt;div class=&quot;tags success&quot;&gt;JEE(M) &amp;plus;&lt;/div&gt;</pre>
+									<pre>&lt;div class=&quot;tags alert&quot;&gt;JEE(M) &amp;times;&lt;/div&gt;</pre>
+									<pre>&lt;div class=&quot;tags purple&quot;&gt;JEE(M) &amp;plus;&lt;/div&gt;</pre>
+									<pre>&lt;div class=&quot;tags lightgray&quot;&gt;JEE(M) &amp;times;&lt;/div&gt;</pre>
+								</div>
+								<!--  -->
+								<div class="bd-example">
+									<h4>Filter chips</h4>
+									<div class="chips">
+										JEE(M) <a href="#!"><img src="img/cancel.svg"></a>
+									</div>
+								</div>
+								<div class="highlight">
+									<pre>&lt;div class=&quot;chips&quot;&gt;JEE(M)</pre>
+									<pre>&lt;a href=&quot;#!&quot;&gt;&lt;img src=&quot;img/cancel.svg&quot;&gt;&lt;/a&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
 								</div>
 							</div>
 							<div id="html" class="tab-pane fade">
-								<figure class="bd-example">
-									<pre>No data</pre>
-									<div class="copyContent">
-										<a href="#!" onclick="copyToClipboard('#p1')">Copy</a>
-									</div>
-								</figure>
 							</div>
 							<div id="css" class="tab-pane fade">
 								<div class="bd-example">
-									<pre>No data</pre>
+									<pre>.tags{display:inline-block;padding:.5rem 1.3125rem;border-radius:1.25rem;font-size:.875rem}</pre>
+									<pre>.tags.primary{border:1px solid #1d7dea;color:#1d7dea}.tags.primary:hover{border:1px solid #1d7dea;color:#1d7dea}</pre>
+									<pre>.tags.success{border:1px solid #30be76;color:#30be76}</pre>
+									<pre>.tags.success:hover{border:1px solid #30be76;color:#30be76}.tags.alert{border:1px solid #fc0;color:#fc0}</pre>
+									<pre>.tags.alert:hover{border:1px solid #fc0;color:#fc0}.tags.purple{border:1px solid #9f37ae;color:#9f37ae}</pre>
+									<pre>.tags.purple:hover{border:1px solid #9f37ae;color:#9f37ae}.tags.lightgray{border:1px solid #666;color:#666}</pre>
+									<pre>.tags.lightgray:hover{border:1px solid #666;color:#666}</pre>
+									<pre>@media only screen and (min-width:48rem) and (max-width:64rem){.tags{padding:.4375rem 1.3125rem;font-size:.875rem}}</pre>
+									<pre>@media only screen and (min-width:20rem) and (max-width:47.9375rem){.tags{padding:.375rem 1.3125rem;font-size:.75rem}}</pre>
+									</pre>
 									<div class="copyContent">
 										<a href="#!" onclick="copyToClipboard('#p1')">Copy</a>
 									</div>
 								</div>
 							</div>
+
 							<div id="scss" class="tab-pane fade">
 								<div class="bd-example">
-									<pre>No data</pre>
+									<pre>.tags{display:inline-block;padding:$size-8 $size-21;border-radius:$size-20;font-size:$size-14;color:$color-primary}&.success{border:1px solid $color-success;color:$color-success}&.alert{border:1px solid $color-alert;color:$color-alert}&.purple{border:1px solid $purple;color:$purple}&.lightgray{border:1px solid $lightgray;color:$lightgray}@include breakpoint(sm){padding:$size-7 $size-21;font-size:$size-14}@include breakpoint(xs){padding:$size-6 $size-21;font-size:$size-12}
+							    </pre>
 									<div class="copyContent">
 										<a href="#!" onclick="copyToClipboard('#p1')">Copy</a>
 									</div>

@@ -1,0 +1,80 @@
+@import "../helpers/variable";
+
+.tags{
+	display: inline-block;	
+	padding: $size-8 $size-21;	
+	border-radius: $size-20;
+	font-size: $size-14;
+	&.primary{
+		border: 1px solid $color-primary;
+		color: $color-primary;
+		&:hover{
+			border: 1px solid $color-primary;
+			color: $color-primary;
+		}
+	}
+	&.success{
+		border: 1px solid $color-success;
+		color: $color-success;
+		&:hover{
+			border: 1px solid $color-success;
+			color: $color-success;
+		}
+	}
+	&.alert{
+		border: 1px solid $color-alert;
+		color: $color-alert;
+		&:hover{
+			border: 1px solid $color-alert;
+			color: $color-alert;
+		}
+	}
+	&.purple{
+		border: 1px solid $purple;
+		color: $purple;
+		&:hover{
+			border: 1px solid $purple;
+			color: $purple;
+		}
+	}
+	&.lightgray{
+		border: 1px solid $lightgray;
+		color: $lightgray;
+		&:hover{
+			border: 1px solid $lightgray;
+			color: $lightgray;
+		}
+	}
+	  
+	  @include breakpoint(sm) {
+	    padding: $size-7 $size-21;
+	    font-size: $size-14;
+	  }
+	  @include breakpoint(xs) {
+	    padding: $size-6 $size-21;
+	    font-size: $size-12;
+	  }
+}
+
+//Chips
+
+.chips{
+	display: inline-block;	
+	background: $chips-bg;
+	padding: $size-6 $size-18;	
+	border-radius: $size-36;
+	font-size: $size-14;
+	color: $lightblack;
+	&:hover{
+	background: $chips-hover;
+	}
+	  
+	  @include breakpoint(sm) {
+	    padding: $size-7 $size-21;
+	    font-size: $size-14;
+	  }
+	  @include breakpoint(xs) {
+	    padding: $size-6 $size-12;
+	    font-size: $size-10;
+	  }
+}

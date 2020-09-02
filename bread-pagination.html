@@ -14,6 +14,7 @@
 </head>
 
 <body>
+
 	<header>
 		<div class="container">
 			<nav>
@@ -143,21 +144,24 @@
 			<div class="px-3 py-4 position-relative">
 				<h4 class="heading">Components</h4>
 				<ul class="sidebar__list--menu mt-3">
-					<li><a href="accordian.html" class="active">Accordian</a></li>
-					<li><a href="alert.html" class="">Alert</a></li>
+					<!-- <li><a href="accordian.html" class="active">Accordian</a></li> -->
+					<!-- <li><a href="alert.html" class="">Alert</a></li> -->
 					<li><a href="buttons.html" class="">Buttons</a></li>
 					<li><a href="color.html" class="">Color</a></li>
 					<li><a href="card.html" class="">Card</a></li>
 					<li><a href="casousel.html" class="">Carousel</a></li>
-					<li><a href="dropdown.html" class="">Dropdown</a></li>
+					<!-- <li><a href="dropdown.html" class="">Dropdown</a></li>		 -->
+					<li><a href="empty.html" class="">Empty State</a></li>
 					<li><a href="heading.html" class="">Heading</a></li>
 					<li><a href="input.html" class="">Inputs</a></li>
-					<li><a href="navigation.html" class="">Navigation</a></li>
+					<!-- <li><a href="navigation.html" class="">Navigation</a></li>	 -->
+					<li><a href="popup.html" class="">Popup</a></li>
+					<li><a href="bread-pagination.html" class="">Paginatin and Breadcrumbs</a></li>
 					<li><a href="progress-bar.html" class="">Progress bar</a></li>
 					<li><a href="tabs.html" class="">Tabs</a></li>
+					<li><a href="tag-chips.html" class="">Tags and Chips</a></li>
 					<li><a href="toaster.html" class="">Toaster Alert</a></li>
-					<li><a href="tooltip" class="">Tooltip</a></li>
-
+					<li><a href="tooltip.html" class="">Tooltip</a></li>
 				</ul>
 			</div>
 		</div>
@@ -169,12 +173,11 @@
 			</nav>
 			<section class="pt-0 px-3 designsection accordian">
 				<div class="col-md-11">
-					<h1>Progress Bar</h1>
+					<h1>Pagination and Breadcrums</h1>
 
 					<div class="position-relative" id="#p1">
 						<ul class="nav nav-tabs">
 							<li class="active"><a data-toggle="tab" href="#design">Design</a></li>
-							<li><a data-toggle="tab" href="#html">HTML</a></li>
 							<li><a data-toggle="tab" href="#css">CSS</a></li>
 							<li><a data-toggle="tab" href="#scss">SCSS</a></li>
 							<li><a data-toggle="tab" href="#nghtml">NG HTML</a></li>
@@ -184,16 +187,48 @@
 						<div class="tab-content">
 							<div id="design" class="tab-pane fade in active show">
 								<div class="bd-example">
-									<img src="img/progressbar.gif" alt="accordian" title="accordian" width="500">
+									<ul class="breadcrumb mybread">
+										<li><a href="#">Home</a></li>
+										<li><a href="#">Pictures</a></li>
+										<li><a href="#">Summer 15</a></li>
+										<li>Italy</li>
+									</ul>
 								</div>
-							</div>
-							<div id="html" class="tab-pane fade">
-								<figure class="bd-example">
-									<pre>No data</pre>
-									<div class="copyContent">
-										<a href="#!" onclick="copyToClipboard('#p1')">Copy</a>
+								<div class="highlight">
+									<pre>&lt;ul class=&quot;breadcrumb mybread&quot;&gt;</pre>
+									<pre>&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;</pre>
+									<pre>&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Pictures&lt;/a&gt;&lt;/li&gt;</pre>
+									<pre>&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Summer 15&lt;/a&gt;&lt;/li&gt;</pre>
+									<pre>&lt;li&gt;Italy&lt;/li&gt;</pre>
+									<pre>&lt;/ul&gt;</pre>
+								</div>
+								<!--  -->
+								<div class="bd-example">
+									<div class="pagination">
+										<a href="#"><img src="img/leftarrow.svg"></a>
+										<a href="#">1</a>
+										<a href="#" class="active">2</a>
+										<a href="#">3</a>
+										<a href="#">4</a>
+										<a href="#">5</a>
+										<a href="#">6</a>
+										<a href="#">...</a>
+										<a href="#">10</a>
+										<a href="#"><img src="img/rightarrow.svg"></a>
 									</div>
-								</figure>
+								</div>
+								<div class="highlight">
+									<pre>&lt;div class=&quot;pagination&quot;&gt;</pre>
+									<pre>&lt;a href=&quot;#&quot;&gt;&amp;laquo;&lt;/a&gt;</pre>
+									<pre>&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;</pre>
+									<pre>&lt;a href=&quot;#&quot; class=&quot;active&quot;&gt;2&lt;/a&gt;</pre>
+									<pre>&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;</pre>
+									<pre>&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;</pre>
+									<pre>&lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;</pre>
+									<pre>&lt;a href=&quot;#&quot;&gt;6&lt;/a&gt;</pre>
+									<pre>&lt;a href=&quot;#&quot;&gt;&amp;raquo;&lt;/a&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+								</div>
 							</div>
 							<div id="css" class="tab-pane fade">
 								<div class="bd-example">
@@ -203,6 +238,7 @@
 									</div>
 								</div>
 							</div>
+
 							<div id="scss" class="tab-pane fade">
 								<div class="bd-example">
 									<pre>No data</pre>
@@ -239,7 +275,6 @@
 		src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.0/umd/popper.min.js">
 	</script>
-
 </body>
 
 </html>

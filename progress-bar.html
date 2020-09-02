@@ -143,20 +143,24 @@
 			<div class="px-3 py-4 position-relative">
 				<h4 class="heading">Components</h4>
 				<ul class="sidebar__list--menu mt-3">
-					<li><a href="accordian.html" class="active">Accordian</a></li>
-					<li><a href="alert.html" class="">Alert</a></li>
+					<!-- <li><a href="accordian.html" class="active">Accordian</a></li> -->
+					<!-- <li><a href="alert.html" class="">Alert</a></li> -->
 					<li><a href="buttons.html" class="">Buttons</a></li>
 					<li><a href="color.html" class="">Color</a></li>
 					<li><a href="card.html" class="">Card</a></li>
 					<li><a href="casousel.html" class="">Carousel</a></li>
-					<li><a href="dropdown.html" class="">Dropdown</a></li>
+					<!-- <li><a href="dropdown.html" class="">Dropdown</a></li> -->
+					<li><a href="empty.html" class="">Empty State</a></li>
 					<li><a href="heading.html" class="">Heading</a></li>
 					<li><a href="input.html" class="">Inputs</a></li>
-					<li><a href="navigation.html" class="">Navigation</a></li>
+					<!-- <li><a href="navigation.html" class="">Navigation</a></li>	 -->
+					<li><a href="popup.html" class="">Popup</a></li>
+					<li><a href="bread-pagination.html" class="">Paginatin and Breadcrumbs</a></li>
 					<li><a href="progress-bar.html" class="">Progress bar</a></li>
 					<li><a href="tabs.html" class="">Tabs</a></li>
+					<li><a href="tag-chips.html" class="">Tags and Chips</a></li>
 					<li><a href="toaster.html" class="">Toaster Alert</a></li>
-					<li><a href="tooltip" class="">Tooltip</a></li>
+					<li><a href="tooltip.html" class="">Tooltip</a></li>
 
 				</ul>
 			</div>
@@ -169,12 +173,11 @@
 			</nav>
 			<section class="pt-0 px-3 designsection accordian">
 				<div class="col-md-11">
-					<h1>Progress Bar</h1>
+					<h1>Progressbar</h1>
 
 					<div class="position-relative" id="#p1">
 						<ul class="nav nav-tabs">
 							<li class="active"><a data-toggle="tab" href="#design">Design</a></li>
-							<li><a data-toggle="tab" href="#html">HTML</a></li>
 							<li><a data-toggle="tab" href="#css">CSS</a></li>
 							<li><a data-toggle="tab" href="#scss">SCSS</a></li>
 							<li><a data-toggle="tab" href="#nghtml">NG HTML</a></li>
@@ -184,17 +187,61 @@
 						<div class="tab-content">
 							<div id="design" class="tab-pane fade in active show">
 								<div class="bd-example">
-									<img src="img/progressbar.gif" alt="accordian" title="accordian" width="500">
-								</div>
-							</div>
-							<div id="html" class="tab-pane fade">
-								<figure class="bd-example">
-									<pre>No data</pre>
-									<div class="copyContent">
-										<a href="#!" onclick="copyToClipboard('#p1')">Copy</a>
+									<h4>Circular Progressbar</h4>
+									<div class="circlePercent" data-percent="80">
+										<div class="circleInner">
+											<div class="roundPer"></div>
+										</div>
 									</div>
-								</figure>
+								</div>
+								<div class="highlight">
+									<pre>&lt;div class="circlePercent" data-percent="80"&gt;</pre>
+									<pre>&lt;div class="circleInner"&gt;</pre>
+									<pre>&lt;div class="roundPer"&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+								</div>
+								<!--  -->
+								<div class="bd-example">
+									<h4>Horizontal Progressbar</h4>
+									<br>
+									<div class="progress">
+										<div class="fillBar" data-width="30%">
+										</div>
+									</div>
+								</div>
+								<div class="highlight">
+									<pre>&lt;div class="progress"&gt;&lt;div class="fillBar" data-width="80%"&gt;&lt;/div&gt;&lt;/div&gt;</pre>
+								</div>
+								<!--  -->
+								<div class="bd-example">
+									<h4>Stepper</h4>
+									<div class="stepper">
+										<ul>
+											<li class="done"><span>1</span></li>
+											<li class="done"><span>2</span></li>
+											<li class="current"><span>3</span></li>
+											<li><span>4</span></li>
+											<li><span>5</span></li>
+										</ul>
+									</div>
+								</div>
+								<div class="highlight">
+									<pre>&lt;div class=&quot;stepper&quot;&gt;</pre>
+									<pre>&lt;ul&gt;</pre>
+									<pre>&lt;li class=&quot;done&quot;&gt;&lt;span&gt;1&lt;/span&gt;&lt;/li&gt;</pre>
+									<pre>&lt;li class=&quot;done&quot;&gt;&lt;span&gt;2&lt;/span&gt;&lt;/li&gt;</pre>
+									<pre>&lt;li class=&quot;current&quot;&gt;&lt;span&gt;3&lt;/span&gt;&lt;/li&gt;</pre>
+									<pre>&lt;li&gt;&lt;span&gt;4&lt;/span&gt;&lt;/li&gt;</pre>
+									<pre>&lt;li&gt;&lt;span&gt;5&lt;/span&gt;&lt;/li&gt;</pre>
+									<pre>&lt;/ul&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+									</figure>
+								</div>
+								<!--  -->
 							</div>
+
 							<div id="css" class="tab-pane fade">
 								<div class="bd-example">
 									<pre>No data</pre>
@@ -203,6 +250,7 @@
 									</div>
 								</div>
 							</div>
+
 							<div id="scss" class="tab-pane fade">
 								<div class="bd-example">
 									<pre>No data</pre>
@@ -239,7 +287,52 @@
 		src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.0/umd/popper.min.js">
 	</script>
-
+	<script type="text/javascript">
+		// circular progressbar
+		$(".circlePercent").each(function () {
+			var $this = $(this),
+				$dataV = $this.data("percent"),
+				$dataDeg = $dataV * 3.6,
+				$round = $this.find(".roundPer");
+			$round.css("transform", "rotate(" + parseInt($dataDeg + 180) + "deg)");
+			$this.append('<div class="circleInbox"><span class="percentText"></span></div>');
+			$this.prop('Counter', 0).animate({
+				Counter: $dataV
+			}, {
+				duration: 2000,
+				//easing: 'swing',
+				step: function (now) {
+					$this.find(".percentText").text(Math.ceil(now) + "%");
+				}
+			});
+			if ($dataV) {
+				$round.css("transform", "rotate(" + 360 + "deg)");
+				setTimeout(function () {
+					$this.addClass("percentMore");
+				}, 1000);
+				setTimeout(function () {
+					$round.css("transform", "rotate(" + parseInt($dataDeg + 180) + "deg)");
+				}, 1000);
+			}
+		});
+		// Horizontal progressbar
+		$('.fillBar').each(function () {
+			const width = $(this).data('width');
+			$(this).animate({
+				width: width
+			});
+			$(this).append('<span class="perc"></span>');
+			$(this).prop('Counter', 0).animate({
+				Counter: width
+			}, {
+				duration: 2000,
+				easing: 'swing',
+				step: function (now) {
+					$(this).find(".perc").text(Math.ceil(now) + "%");
+				}
+			});
+		});
+	</script>
 </body>
 
 </html>

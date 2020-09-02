@@ -1,40 +1,171 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Jarvis</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/variables.css">
-	<link rel="stylesheet" type="text/css" href="css/button.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="stylesheet/css/styles.css">
+	<link rel="stylesheet" type="text/css"
+		href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap">
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css"
+		href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
+	<header>
+		<div class="container">
+			<nav>
+				<div class="mobile">
+					<a class="menu-toggle">
+						<svg id="menu-bar" xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+							<path style="fill: #fff;" fill-rule="evenodd" clip-rule="evenodd"
+								d="M0 12h18v-2H0v2zm0-5h18V5H0v2zm0-7v2h18V0H0z" />
+						</svg>
+					</a>
+
+					<a href=""><img src="img/short-white-logo.svg" width="30" alt="Logo" /></a>
+
+				</div>
+				<ul>
+					<li>
+						<a href="">
+							<img src="img/mypat-white-logo.svg" width="100" alt="Logo" />
+						</a>
+					</li>
+					<li><a href="#">
+							Dashboard</a>
+					</li>
+					<li class="active"><a href="#">
+							TESTS</a>
+					</li>
+					<li><a href="#">
+							COMMUNITY</a>
+					</li>
+					<li><a href="#">
+							Revision</a>
+					</li>
+				</ul>
+
+				<ul class="login-block">
+					<div class="after-login" style="display: none;">
+						<!--show this blocks on login-->
+						<li>
+							<a href="#">
+								<img src="img/notifications-bell.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#" class="avatar">
+								<img src="img/default-avatar.png" alt="">
+							</a>
+						</li>
+					</div>
+					<div class="before-login">
+						<li><a href="#" class="btn btn-primary login">Login</a></li>
+						<li><a href="#" class="btn btn-outline-primary signup">Sign Up</a></li>
+					</div>
+
+				</ul>
+
+				<div class="side-menu">
+					<div class="sidebar-header">
+						<div class="head">
+							<img src="img/logo-mypat2.png" alt="" width="75">
+							<div class="login-block">
+								<div class="after-login">
+
+									<a href="#" class="avatar">
+										<img src="img/default-avatar.png" alt="">
+									</a>
+
+								</div>
+								<div class="before-login" style="display: none;">
+									<!--Hide this blocks on login-->
+									<a href="#" class="btn btn-primary login">Login</a>
+									<a href="#" class="btn btn-outline-primary signup">Sign Up</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="sidebar-body">
+
+						<ul class="before-login" style="display: none;">
+							<!--hide this blocks on login-->
+							<li><a href="#"><img src="img/courses-icon.svg" alt="">Coureses</a></li>
+							<li><a href="#"><img src="img/exams-icon.svg" alt="">My Exams</a></li>
+							<li><a href="#"><img src="img/resources.svg" alt="">Resources</a></li>
+							<li class="dropdown"><a class="dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+									aria-haspopup="true" aria-expanded="false" href="#">
+									<img src="img/community-icon.svg" alt="">COMMUNITY</a>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+									<button class="dropdown-item" type="button">My Feed </button>
+									<button class="dropdown-item" type="button">My Questions <span class="ques-count">(20)</span></button>
+									<button class="dropdown-item" type="button">My answers <span class="ques-count">(20)</span></button>
+								</div>
+							</li>
+							<li><a href="#"><img src="img/gift-icon.svg" alt="">Refer & Earn</a></li>
+						</ul>
+
+						<ul class="after-login">
+							<li><a href="#"><img src="img/dashboard-icon.svg" alt="">Dashboard </a></li>
+							<li><a href="#"><img src="img/exams-icon.svg" alt="">Assignment</a></li>
+							<li class="dropdown"><a class="dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+									aria-haspopup="true" aria-expanded="false" href="#">
+									<img src="img/community-icon.svg" alt="">COMMUNITY</a>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+									<button class="dropdown-item" type="button">My Feed </button>
+									<button class="dropdown-item" type="button">My Questions <span class="ques-count">(20)</span></button>
+									<button class="dropdown-item" type="button">My answers <span class="ques-count">(20)</span></button>
+								</div>
+							</li>
+							<li><a href="#"><img src="img/gift-icon.svg" alt="">Refer & Earn</a></li>
+						</ul>
+					</div>
+
+
+					<div class="sidebar-footer">
+						<a href="#" class="download-now-btn btn btn-primary">
+							<img src="img/play-store-icon.svg" alt=""> Download App</a>
+					</div>
+				</div>
+		</div>
+		<div class="overlay"></div>
+		</nav>
+		</div>
+	</header>
 	<div class="navabar__grub">
 		<div class="sidebar__navbar active">
 			<span></span>
 			<div class="px-3 py-4 position-relative">
-				<a href="#!" class="brand__sidebar d-block text-center"><img src="./img/mypat.svg" width="80" title="myPAT" alt="myPAT"></a>
 				<h4 class="heading">Components</h4>
 				<ul class="sidebar__list--menu mt-3">
-					<li><a href="accordian.html" class="active">Accordian</a></li>
+					<!-- <li><a href="accordian.html" class="active">Accordian</a></li> -->
 					<li><a href="alert.html" class="">Alert</a></li>
 					<li><a href="buttons.html" class="">Buttons</a></li>
 					<li><a href="color.html" class="">Color</a></li>
 					<li><a href="card.html" class="">Card</a></li>
 					<li><a href="casousel.html" class="">Carousel</a></li>
-					<li><a href="dropdown.html" class="">Dropdown</a></li>		
-					<li><a href="heading.html" class="">Heading</a></li>	
-					<li><a href="input.html" class="">Inputs</a></li>	
-					<li><a href="navigation.html" class="">Navigation</a></li>	
-					<li><a href="progress-bar.html" class="">Progress bar</a></li>		
-					<li><a href="tabs.html" class="">Tabs</a></li>						
+					<!-- <li><a href="dropdown.html" class="">Dropdown</a></li> -->
+					<li><a href="empty.html" class="">Empty State</a></li>
+					<li><a href="heading.html" class="">Heading</a></li>
+					<li><a href="input.html" class="">Inputs</a></li>
+					<!-- <li><a href="navigation.html" class="">Navigation</a></li>	 -->
+					<li><a href="popup.html" class="">Popup</a></li>
+					<li><a href="bread-pagination.html" class="">Paginatin and Breadcrumbs</a></li>
+					<li><a href="progress-bar.html" class="">Progress bar</a></li>
+					<li><a href="tabs.html" class="">Tabs</a></li>
+					<li><a href="tag-chips.html" class="">Tags and Chips</a></li>
 					<li><a href="toaster.html" class="">Toaster Alert</a></li>
-					<li><a href="tooltip" class="">Tooltip</a></li>
-					
+					<li><a href="tooltip.html" class="">Tooltip</a></li>
+
 				</ul>
 			</div>
 		</div>
-		<div class="sidebar__content">			
+		<div class="sidebar__content">
 			<nav class="navbar navbar-expand-md sidebar__side p-3">
 				<a class="navabar__menu position-relative d-inline-block" href="#">
 					<i class="fa fa-bars" aria-hidden="true"></i>
@@ -42,114 +173,113 @@
 			</nav>
 			<section class="pt-0 px-3 designsection accordian">
 				<div class="col-md-11">
-					<h1>Button</h1>				
-					
+					<h1>Button</h1>
+
 					<div class="position-relative" id="#p1">
 						<ul class="nav nav-tabs">
-						  <li class="active"><a data-toggle="tab" href="#design">Design</a></li>
-						  <li><a data-toggle="tab" href="#html">HTML</a></li>
-						  <li><a data-toggle="tab" href="#css">CSS</a></li>
-						  <li><a data-toggle="tab" href="#scss">SCSS</a></li>
-						  <li><a data-toggle="tab" href="#nghtml">NG HTML</a></li>
-						  <li><a data-toggle="tab" href="#ts">TS</a></li>
+							<li class="active"><a data-toggle="tab" href="#design">Design</a></li>
+							<li><a data-toggle="tab" href="#css">CSS</a></li>
+							<li><a data-toggle="tab" href="#scss">SCSS</a></li>
+							<li><a data-toggle="tab" href="#nghtml">NG HTML</a></li>
+							<li><a data-toggle="tab" href="#ts">TS</a></li>
 						</ul>
 
 						<div class="tab-content">
-						  <div id="design" class="tab-pane fade in active show">
-						    <div class="bd-example">
-						    	<p>Large button</p>
-						    	<button type="button" class="btn primary-btn">Primary</button>	
-						    	<span>---></span>
-						    	<button type="button" class="btn outline-btn">Outline</button>	
-						    	<span>---></span>
-						    	<button type="button" class="btn text-btn">Textual</button>	
-							</div>
-							<!-- Medium button -->
-							<div class="bd-example">
-						    	<p>Medium button</p>
-						    	<button type="button" class="btn primary-btn md">Primary</button>	
-						    	<span>---></span>
-						    	<button type="button" class="btn outline-btn md">Outline</button>
-						    	<span>---></span>
-						    	<button type="button" class="btn text-btn md">Textual</button>	
-							</div>
-							<!-- Small button -->
-							<div class="bd-example">
-						    	<p>Small button</p>
-						    	<button type="button" class="btn primary-btn sm">Primary</button>	
-						    	<span>---></span>
-						    	<button type="button" class="btn outline-btn sm">Outline</button>
-						    	<span>---></span>
-						    	<button type="button" class="btn text-btn sm">Textual</button>	
-							</div>
-							<!-- Small button -->
-							<div class="bd-example">
-						    	<p>Button with Icon</p>
-						    	<button type="button" class="btn primary-btn sm">Primary <img src="img/download.svg"></button>	
-						    	<span>---></span>
-						    	<button type="button" class="btn outline-btn sm">Outline</button>
-						    	<span>---></span>
-						    	<button type="button" class="btn text-btn sm">Textual</button>	
-							</div>
-						  </div>
-						  <div id="html" class="tab-pane fade">
-						   <figure  class="bd-example">
-								<pre>&lt;button type=&quot;button&quot; class=&quot;btn primary-btn&quot;&gt;Primary&lt;/button&gt;	</pre>
-								<pre>&lt;button type=&quot;button&quot; class=&quot;btn outline-btn&quot;&gt;Outline&lt;/button&gt;	</pre>
-								<pre>&lt;button type=&quot;button&quot; class=&quot;btn text-btn&quot;&gt;Textual&lt;/button&gt;	</pre>
-								<pre>&lt;button type=&quot;button&quot; class=&quot;btn primary-btn md&quot;&gt;Primary&lt;/button&gt;	</pre>
-								<pre>&lt;button type=&quot;button&quot; class=&quot;btn outline-btn md&quot;&gt;Outline&lt;/button&gt;</pre>	
-								<pre>&lt;button type=&quot;button&quot; class=&quot;btn text-btn md&quot;&gt;Textual&lt;/button&gt;	</pre>
-								<pre>&lt;button type=&quot;button&quot; class=&quot;btn primary-btn sm&quot;&gt;Primary&lt;/button&gt;	</pre>
-								<pre>&lt;button type=&quot;button&quot; class=&quot;btn outline-btn sm&quot;&gt;Outline&lt;/button&gt;</pre>	
-								<pre>&lt;button type=&quot;button&quot; class=&quot;btn text-btn sm&quot;&gt;Textual&lt;/button&gt;	</pre>
-								<div class="copyContent">
-									<a href="#!" onclick="copyToClipboard('#p1')">Copy</a>
+							<div id="design" class="tab-pane fade in active show">
+								<div class="bd-example">
+									<h2>Large button</h2>
+									<button type="button" class="btn bs hover">Primary md</button>
+									<button type="button" class="btn ms hover">Primary sm</button>
+									<button type="button" class="btn ss hover">Primary xs</button>
 								</div>
-							</figure>
-						  </div>
-						  <div id="css" class="tab-pane fade">
-						  	<div class="bd-example">
-							    <pre>No data</pre>
-							    <div class="copyContent">
-									<a href="#!" onclick="copyToClipboard('#p1')">Copy</a>
+								<div class="highlight">
+									<pre>&lt;button type=&quot;button&quot; class=&quot;btn bs hover&quot;&gt;Primary md&lt;/button&gt;</pre>
+									<pre>&lt;button type=&quot;button&quot; class=&quot;btn ms hover&quot;&gt;Primary sm&lt;/button&gt;</pre>
+									<pre>&lt;button type=&quot;button&quot; class=&quot;btn ss hover&quot;&gt;Primary xs&lt;/button&gt;</pre>
+								</div>
+								<div class="bd-example">
+									<h2>Disabled button</h2>
+									<button type="button" class="btn bs disabled">Primary Disabled</button>
+									<button type="button" class="btn ms disabled">Primary Disabled</button>
+									<button type="button" class="btn ss disabled">Primary Disabled</button>
+								</div>
+								<div class="highlight">
+									<pre>&lt;button type=&quot;button&quot; class=&quot;btn bs disabled&quot;&gt;Primary Disabled&lt;/button&gt;</pre>
+									<pre>&lt;button type=&quot;button&quot; class=&quot;btn ms disabled&quot;&gt;Primary Disabled&lt;/button&gt;</pre>
+									<pre>&lt;button type=&quot;button&quot; class=&quot;btn ss disabled&quot;&gt;Primary Disabled&lt;/button&gt;</pre>
+								</div>
+								<!-- Medium button -->
+								<div class="bd-example">
+									<h3>Outline Buttons</h3>
+									<div>
+										<button type="button" class="btn outline bs">Primary md</button>
+										<button type="button" class="btn outline ms">Primary sm</button>
+										<button type="button" class="btn outline ss">Primary xs</button>
+									</div>
+								</div>
+								<div class="highlight">
+									<pre>&lt;button type=&quot;button&quot; class=&quot;btn outline bs&quot;&gt;Primary md&lt;/button&gt;</pre>
+									<pre>&lt;button type=&quot;button&quot; class=&quot;btn outline ms&quot;&gt;Primary sm&lt;/button&gt;</pre>
+									<pre>&lt;button type=&quot;button&quot; class=&quot;btn outline ss&quot;&gt;Primary xs&lt;/button&gt;</pre>
+								</div>
+								<!-- Small button -->
+								<div class="bd-example">
+									<h3>Without Outline Button</h3>
+									<button type="button" class="btn bs text">Button big size</button>
+									<button type="button" class="btn ms text">Button medium size</button>
+									<button type="button" class="btn ss text">Button small size</button>
+								</div>
+								<div class="highlight">
+									<pre>&lt;button type=&quot;button&quot; class=&quot;btn bs text&quot;&gt;Button big size&lt;/button&gt;</pre>
+									<pre>&lt;button type=&quot;button&quot; class=&quot;btn ms text&quot;&gt;Button medium size&lt;/button&gt;</pre>
+									<pre>&lt;button type=&quot;button&quot; class=&quot;btn ss text&quot;&gt;Button small size&lt;/button&gt;</pre>
 								</div>
 							</div>
-						  </div>
-						  <div id="scss" class="tab-pane fade">
-						  	<div class="bd-example">
-							    <pre>No data</pre>
-							    <div class="copyContent">
-									<a href="#!" onclick="copyToClipboard('#p1')">Copy</a>
+							<div id="css" class="tab-pane fade">
+								<div class="bd-example">
+									<pre>No data</pre>
+									<div class="copyContent">
+										<a href="#!" onclick="copyToClipboard('#p1')">Copy</a>
+									</div>
 								</div>
 							</div>
-						  </div>
-						  <div id="nghtml" class="tab-pane fade">
-						  	<div class="bd-example">
-							    <pre>No data</pre>
-							    <div class="copyContent">
-									<a href="#!" onclick="copyToClipboard('#p1')">Copy</a>
+							<div id="scss" class="tab-pane fade">
+								<div class="bd-example">
+									<pre>No data</pre>
+									<div class="copyContent">
+										<a href="#!" onclick="copyToClipboard('#p1')">Copy</a>
+									</div>
 								</div>
 							</div>
-						  </div>
-						  <div id="ts" class="tab-pane fade">
-						  	<div class="bd-example">
-							    <pre>No data</pre>
-							    <div class="copyContent">
-									<a href="#!" onclick="copyToClipboard('#p1')">Copy</a>
+							<div id="nghtml" class="tab-pane fade">
+								<div class="bd-example">
+									<pre>No data</pre>
+									<div class="copyContent">
+										<a href="#!" onclick="copyToClipboard('#p1')">Copy</a>
+									</div>
 								</div>
 							</div>
-						  </div>
-						</div>												
-					</div>					
+							<div id="ts" class="tab-pane fade">
+								<div class="bd-example">
+									<pre>No data</pre>
+									<div class="copyContent">
+										<a href="#!" onclick="copyToClipboard('#p1')">Copy</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 		</div>
 	</div>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/common.js"></script>	
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.0/umd/popper.min.js"></script>
-	
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.0/umd/popper.min.js">
+	</script>
+
 </body>
+
 </html>

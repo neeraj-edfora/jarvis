@@ -143,20 +143,24 @@
 			<div class="px-3 py-4 position-relative">
 				<h4 class="heading">Components</h4>
 				<ul class="sidebar__list--menu mt-3">
-					<li><a href="accordian.html" class="active">Accordian</a></li>
-					<li><a href="alert.html" class="">Alert</a></li>
+					<!-- <li><a href="accordian.html" class="active">Accordian</a></li> -->
+					<!-- <li><a href="alert.html" class="">Alert</a></li> -->
 					<li><a href="buttons.html" class="">Buttons</a></li>
 					<li><a href="color.html" class="">Color</a></li>
 					<li><a href="card.html" class="">Card</a></li>
 					<li><a href="casousel.html" class="">Carousel</a></li>
-					<li><a href="dropdown.html" class="">Dropdown</a></li>
+					<!-- <li><a href="dropdown.html" class="">Dropdown</a></li>		 -->
+					<li><a href="empty.html" class="">Empty State</a></li>
 					<li><a href="heading.html" class="">Heading</a></li>
 					<li><a href="input.html" class="">Inputs</a></li>
-					<li><a href="navigation.html" class="">Navigation</a></li>
+					<!-- <li><a href="navigation.html" class="">Navigation</a></li>	 -->
+					<li><a href="popup.html" class="">Popup</a></li>
+					<li><a href="bread-pagination.html" class="">Paginatin and Breadcrumbs</a></li>
 					<li><a href="progress-bar.html" class="">Progress bar</a></li>
 					<li><a href="tabs.html" class="">Tabs</a></li>
+					<li><a href="tag-chips.html" class="">Tags and Chips</a></li>
 					<li><a href="toaster.html" class="">Toaster Alert</a></li>
-					<li><a href="tooltip" class="">Tooltip</a></li>
+					<li><a href="tooltip.html" class="">Tooltip</a></li>
 
 				</ul>
 			</div>
@@ -169,12 +173,11 @@
 			</nav>
 			<section class="pt-0 px-3 designsection accordian">
 				<div class="col-md-11">
-					<h1>Progress Bar</h1>
+					<h1>Toaster</h1>
 
 					<div class="position-relative" id="#p1">
 						<ul class="nav nav-tabs">
 							<li class="active"><a data-toggle="tab" href="#design">Design</a></li>
-							<li><a data-toggle="tab" href="#html">HTML</a></li>
 							<li><a data-toggle="tab" href="#css">CSS</a></li>
 							<li><a data-toggle="tab" href="#scss">SCSS</a></li>
 							<li><a data-toggle="tab" href="#nghtml">NG HTML</a></li>
@@ -184,16 +187,140 @@
 						<div class="tab-content">
 							<div id="design" class="tab-pane fade in active show">
 								<div class="bd-example">
-									<img src="img/progressbar.gif" alt="accordian" title="accordian" width="500">
-								</div>
-							</div>
-							<div id="html" class="tab-pane fade">
-								<figure class="bd-example">
-									<pre>No data</pre>
-									<div class="copyContent">
-										<a href="#!" onclick="copyToClipboard('#p1')">Copy</a>
+									<h4>On Task Error</h4>
+									<div class="toster tosterWidth red">
+										<div class="toster-inner">
+											<div class="icon">
+												<img src="img/cross.svg">
+											</div>
+											<div class="toster-content">
+												<b>Sorry, this post has been removed</b>
+												<p>There was a problem with your request</p>
+											</div>
+											<div class="close">
+												<a href="#!" onclick="closeDialog()">&times;</a>
+											</div>
+										</div>
 									</div>
-								</figure>
+								</div>
+								<div class="highlight">
+									<pre>&lt;div class=&quot;toster red&quot;&gt;</pre>
+									<pre>&lt;div class=&quot;toster-inner&quot;&gt;</pre>
+									<pre>&lt;div class=&quot;icon&quot;&gt;</pre>
+									<pre>&lt;img src=&quot;img/cross.svg&quot;&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre>&lt;div class=&quot;toster-content&quot;&gt;	</pre>
+									<pre>&lt;b&gt;Sorry, this post has been removed&lt;/b&gt;</pre>
+									<pre>&lt;p&gt;There was a problem with your request&lt;/p&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre>&lt;div class=&quot;close&quot;&gt;</pre>
+									<pre>&amp;times;</pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+								</div>
+								<!--  -->
+								<div class="bd-example">
+									<h4>On Task Sucessfull Completion</h4>
+									<div class="toster tosterWidth success">
+										<div class="toster-inner">
+											<div class="icon">
+												<img src="img/success.svg">
+											</div>
+											<div class="toster-content">
+												<b>Yay! Post successfully posted</b>
+												<p>Question submitted to the Community.</p>
+											</div>
+											<div class="close">
+												<a href="#!">&times;</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="highlight">
+									<pre>&lt;div class=&quot;toster tosterWidth success&quot;&gt;</pre>
+									<pre>&lt;div class=&quot;toster-inner&quot;&gt;</pre>
+									<pre>&lt;div class=&quot;icon&quot;&gt;</pre>
+									<pre>&lt;img src=&quot;img/success.svg&quot;&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre>&lt;div class=&quot;toster-content&quot;&gt;</pre>
+									<pre>&lt;b&gt;Yay! Post successfully posted&lt;/b&gt;</pre>
+									<pre>&lt;p&gt;Question submitted to the Community.&lt;/p&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre>&lt;div class=&quot;close&quot;&gt;</pre>
+									<pre>&lt;a href=&quot;#!&quot;&gt;&amp;times;&lt;/a&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+								</div>
+								<!--  -->
+								<div class="bd-example">
+									<h4>On Task Warning</h4>
+									<div class="toster tosterWidth warning">
+										<div class="toster-inner">
+											<div class="icon">
+												<img src="img/warning.svg">
+											</div>
+											<div class="toster-content">
+												<b>Uh oh, something went wrong</b>
+												<p>There was a problem with your request</p>
+											</div>
+											<div class="close">
+												<a href="#!">&times;</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="highlight">
+									<pre>&lt;div class=&quot;toster tosterWidth warning&quot;&gt;</pre>
+									<pre>&lt;div class=&quot;toster-inner&quot;&gt;</pre>
+									<pre>&lt;div class=&quot;icon&quot;&gt;</pre>
+									<pre>&lt;img src=&quot;img/warning.svg&quot;&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre>&lt;div class=&quot;toster-content&quot;&gt;	</pre>
+									<pre>&lt;b&gt;Uh oh, something went wrong&lt;/b&gt;</pre>
+									<pre>&lt;p&gt;There was a problem with your request&lt;/p&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre>&lt;div class=&quot;close&quot;&gt;</pre>
+									<pre>&lt;a href=&quot;#!&quot;&gt;&amp;times;&lt;/a&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+								</div>
+								<!--  -->
+								<div class="bd-example">
+									<h4>On Notification</h4>
+									<div class="toster tosterWidth notification">
+										<div class="toster-inner">
+											<div class="icon">
+												<img src="img/notification.svg">
+											</div>
+											<div class="toster-content">
+												<b>3 more steps for Registration</b>
+												<p>There was a problem with your request</p>
+											</div>
+											<div class="close">
+												<a href="#!">&times;</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="highlight">
+									<pre>&lt;div class=&quot;toster tosterWidth notification&quot;&gt;</pre>
+									<pre>&lt;div class=&quot;toster-inner&quot;&gt;</pre>
+									<pre>&lt;div class=&quot;icon&quot;&gt;</pre>
+									<pre>&lt;img src=&quot;img/notification.svg&quot;&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre>&lt;div class=&quot;toster-content&quot;&gt;	</pre>
+									<pre>&lt;b&gt;3 more steps for Registration&lt;/b&gt;</pre>
+									<pre>&lt;p&gt;There was a problem with your request&lt;/p&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre>&lt;div class=&quot;close&quot;&gt;</pre>
+									<pre>&lt;a href=&quot;#!&quot;&gt;&amp;times;&lt;/a&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+								</div>
 							</div>
 							<div id="css" class="tab-pane fade">
 								<div class="bd-example">
@@ -203,6 +330,7 @@
 									</div>
 								</div>
 							</div>
+
 							<div id="scss" class="tab-pane fade">
 								<div class="bd-example">
 									<pre>No data</pre>
@@ -239,7 +367,12 @@
 		src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.0/umd/popper.min.js">
 	</script>
-
+	<script type="text/javascript">
+		var closeButtons = $('.close');
+		closeButtons.on('click', function () {
+			$(this).parent().parent().hide();
+		});
+	</script>
 </body>
 
 </html>

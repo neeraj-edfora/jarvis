@@ -143,20 +143,24 @@
 			<div class="px-3 py-4 position-relative">
 				<h4 class="heading">Components</h4>
 				<ul class="sidebar__list--menu mt-3">
-					<li><a href="accordian.html" class="active">Accordian</a></li>
-					<li><a href="alert.html" class="">Alert</a></li>
+					<!-- <li><a href="accordian.html" class="active">Accordian</a></li> -->
+					<!-- <li><a href="alert.html" class="">Alert</a></li> -->
 					<li><a href="buttons.html" class="">Buttons</a></li>
 					<li><a href="color.html" class="">Color</a></li>
 					<li><a href="card.html" class="">Card</a></li>
 					<li><a href="casousel.html" class="">Carousel</a></li>
-					<li><a href="dropdown.html" class="">Dropdown</a></li>
+					<!-- <li><a href="dropdown.html" class="">Dropdown</a></li>		 -->
 					<li><a href="heading.html" class="">Heading</a></li>
+					<li><a href="empty.html" class="">Empty State</a></li>
 					<li><a href="input.html" class="">Inputs</a></li>
-					<li><a href="navigation.html" class="">Navigation</a></li>
+					<!-- <li><a href="navigation.html" class="">Navigation</a></li>	 -->
+					<li><a href="popup.html" class="">Popup</a></li>
+					<li><a href="bread-pagination.html" class="">Paginatin and Breadcrumbs</a></li>
 					<li><a href="progress-bar.html" class="">Progress bar</a></li>
 					<li><a href="tabs.html" class="">Tabs</a></li>
+					<li><a href="tag-chips.html" class="">Tags and Chips</a></li>
 					<li><a href="toaster.html" class="">Toaster Alert</a></li>
-					<li><a href="tooltip" class="">Tooltip</a></li>
+					<li><a href="tooltip.html" class="">Tooltip</a></li>
 
 				</ul>
 			</div>
@@ -169,12 +173,11 @@
 			</nav>
 			<section class="pt-0 px-3 designsection accordian">
 				<div class="col-md-11">
-					<h1>Progress Bar</h1>
+					<h1>Tooltip</h1>
 
 					<div class="position-relative" id="#p1">
 						<ul class="nav nav-tabs">
 							<li class="active"><a data-toggle="tab" href="#design">Design</a></li>
-							<li><a data-toggle="tab" href="#html">HTML</a></li>
 							<li><a data-toggle="tab" href="#css">CSS</a></li>
 							<li><a data-toggle="tab" href="#scss">SCSS</a></li>
 							<li><a data-toggle="tab" href="#nghtml">NG HTML</a></li>
@@ -184,16 +187,25 @@
 						<div class="tab-content">
 							<div id="design" class="tab-pane fade in active show">
 								<div class="bd-example">
-									<img src="img/progressbar.gif" alt="accordian" title="accordian" width="500">
-								</div>
-							</div>
-							<div id="html" class="tab-pane fade">
-								<figure class="bd-example">
-									<pre>No data</pre>
-									<div class="copyContent">
-										<a href="#!" onclick="copyToClipboard('#p1')">Copy</a>
+									<div>
+										<span tooltip="I'm up above it!">Up</span>
 									</div>
-								</figure>
+									<div>
+										<span tooltip="Slide to the left" flow="left">Left</span>
+									</div>
+									<div>
+										<span tooltip="Slide to the right" flow="right">Right</span>
+									</div>
+									<div>
+										<span tooltip="Get Down." flow="down">Down</span>
+									</div>
+								</div>
+								<div class="highlight">
+									<pre>&lt;span tooltip=&quot;I'm up above it!&quot;&gt;Up&lt;/span&gt;</pre>
+									<pre>&lt;span tooltip=&quot;Slide to the left&quot; flow=&quot;left&quot;&gt;Left&lt;/span&gt;</pre>
+									<pre>&lt;span tooltip=&quot;Slide to the right&quot; flow=&quot;right&quot;&gt;Right&lt;/span&gt;</pre>
+									<pre>&lt;span tooltip=&quot;Get Down.&quot; flow=&quot;down&quot;&gt;Down&lt;/span&gt;</pre>
+								</div>
 							</div>
 							<div id="css" class="tab-pane fade">
 								<div class="bd-example">
@@ -203,6 +215,7 @@
 									</div>
 								</div>
 							</div>
+
 							<div id="scss" class="tab-pane fade">
 								<div class="bd-example">
 									<pre>No data</pre>

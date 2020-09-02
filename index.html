@@ -1,55 +1,225 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Jarvis</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/variables.css">
+	<link rel="stylesheet" type="text/css" href="stylesheet/css/styles.css">
+	<link rel="stylesheet" type="text/css"
+		href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap">
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css"
+		href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/variables.css"> -->
 </head>
+
 <body>
+	<header>
+		<div class="container">
+			<nav>
+				<div class="mobile">
+					<a class="menu-toggle">
+						<svg id="menu-bar" xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+							<path style="fill: #fff;" fill-rule="evenodd" clip-rule="evenodd"
+								d="M0 12h18v-2H0v2zm0-5h18V5H0v2zm0-7v2h18V0H0z" />
+						</svg>
+					</a>
+
+					<a href=""><img src="img/short-white-logo.svg" width="30" alt="Logo" /></a>
+
+				</div>
+				<ul>
+					<li>
+						<a href="">
+							<img src="img/mypat-white-logo.svg" width="100" alt="Logo" />
+						</a>
+					</li>
+					<li><a href="#">
+							Dashboard</a>
+					</li>
+					<li class="active"><a href="#">
+							TESTS</a>
+					</li>
+					<li><a href="#">
+							COMMUNITY</a>
+					</li>
+					<li><a href="#">
+							Revision</a>
+					</li>
+				</ul>
+
+				<ul class="login-block">
+					<div class="after-login" style="display: none;">
+						<!--show this blocks on login-->
+						<li>
+							<a href="#">
+								<img src="img/notifications-bell.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#" class="avatar">
+								<img src="img/default-avatar.png" alt="">
+							</a>
+						</li>
+					</div>
+					<div class="before-login">
+						<li><a href="#" class="btn btn-primary login">Login</a></li>
+						<li><a href="#" class="btn btn-outline-primary signup">Sign Up</a></li>
+					</div>
+
+				</ul>
+
+				<div class="side-menu">
+					<div class="sidebar-header">
+						<div class="head">
+							<img src="img/logo-mypat2.png" alt="" width="75">
+							<div class="login-block">
+								<div class="after-login">
+
+									<a href="#" class="avatar">
+										<img src="img/default-avatar.png" alt="">
+									</a>
+
+								</div>
+								<div class="before-login" style="display: none;">
+									<!--Hide this blocks on login-->
+									<a href="#" class="btn btn-primary login">Login</a>
+									<a href="#" class="btn btn-outline-primary signup">Sign Up</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="sidebar-body">
+
+						<ul class="before-login" style="display: none;">
+							<!--hide this blocks on login-->
+							<li><a href="#"><img src="img/courses-icon.svg" alt="">Coureses</a></li>
+							<li><a href="#"><img src="img/exams-icon.svg" alt="">My Exams</a></li>
+							<li><a href="#"><img src="img/resources.svg" alt="">Resources</a></li>
+							<li class="dropdown"><a class="dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+									aria-haspopup="true" aria-expanded="false" href="#">
+									<img src="img/community-icon.svg" alt="">COMMUNITY</a>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+									<button class="dropdown-item" type="button">My Feed </button>
+									<button class="dropdown-item" type="button">My Questions <span class="ques-count">(20)</span></button>
+									<button class="dropdown-item" type="button">My answers <span class="ques-count">(20)</span></button>
+								</div>
+							</li>
+							<li><a href="#"><img src="img/gift-icon.svg" alt="">Refer & Earn</a></li>
+						</ul>
+
+						<ul class="after-login">
+							<li><a href="#"><img src="img/dashboard-icon.svg" alt="">Dashboard </a></li>
+							<li><a href="#"><img src="img/exams-icon.svg" alt="">Assignment</a></li>
+							<li class="dropdown"><a class="dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+									aria-haspopup="true" aria-expanded="false" href="#">
+									<img src="img/community-icon.svg" alt="">COMMUNITY</a>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+									<button class="dropdown-item" type="button">My Feed </button>
+									<button class="dropdown-item" type="button">My Questions <span class="ques-count">(20)</span></button>
+									<button class="dropdown-item" type="button">My answers <span class="ques-count">(20)</span></button>
+								</div>
+							</li>
+							<li><a href="#"><img src="img/gift-icon.svg" alt="">Refer & Earn</a></li>
+						</ul>
+					</div>
+
+
+					<div class="sidebar-footer">
+						<a href="#" class="download-now-btn btn btn-primary">
+							<img src="img/play-store-icon.svg" alt=""> Download App</a>
+					</div>
+				</div>
+		</div>
+		<div class="overlay"></div>
+		</nav>
+		</div>
+	</header>
+	<!-- End -->
 	<div class="navabar__grub">
 		<div class="sidebar__navbar active">
 			<span></span>
 			<div class="px-3 py-4 position-relative">
-				<a href="#!" class="brand__sidebar d-block text-center"><img src="./img/mypat.svg" width="80" title="myPAT" alt="myPAT"></a>
-				<h4 class="heading">Components</h4>
+
+				<h3 class="heading">Components</h3>
 				<ul class="sidebar__list--menu mt-3">
-					<li><a href="accordian.html" class="active">Accordian</a></li>
-					<li><a href="alert.html" class="">Alert</a></li>
 					<li><a href="buttons.html" class="">Buttons</a></li>
 					<li><a href="color.html" class="">Color</a></li>
 					<li><a href="card.html" class="">Card</a></li>
 					<li><a href="casousel.html" class="">Carousel</a></li>
-					<li><a href="dropdown.html" class="">Dropdown</a></li>		
-					<li><a href="heading.html" class="">Heading</a></li>	
-					<li><a href="input.html" class="">Inputs</a></li>	
-					<li><a href="navigation.html" class="">Navigation</a></li>	
-					<li><a href="progress-bar.html" class="">Progress bar</a></li>		
-					<li><a href="tabs.html" class="">Tabs</a></li>						
+					<li><a href="empty.html" class="">Empty State</a></li>
+					<li><a href="heading.html" class="">Heading</a></li>
+					<li><a href="input.html" class="">Inputs</a></li>
+					<li><a href="popup.html" class="">Popup</a></li>
+					<li><a href="bread-pagination.html" class="">Pagination and Breadcrumbs</a></li>
+					<li><a href="progress-bar.html" class="">Progress bar</a></li>
+					<li><a href="tabs.html" class="">Tabs</a></li>
+					<li><a href="tag-chips.html" class="">Tags and Chips</a></li>
 					<li><a href="toaster.html" class="">Toaster Alert</a></li>
-					<li><a href="tooltip" class="">Tooltip</a></li>
-					
+					<li><a href="tooltip.html" class="">Tooltip</a></li>
 				</ul>
 			</div>
 		</div>
-		<div class="sidebar__content">			
+		<div class="sidebar__content">
 			<nav class="navbar navbar-expand-md sidebar__side p-3">
 				<a class="navabar__menu position-relative d-inline-block" href="#">
 					<i class="fa fa-bars" aria-hidden="true"></i>
 				</a>
 			</nav>
-			<section>
+			<section class="text-center">
 				<h1>Jarvis</h1>
+				<p>
+					Get started with <strong>Jarvis</strong>,a UI framework for building responsive, <br> mobile-first sites.
+					Built on the top of Bootstrap.
+				</p>
 			</section>
 		</div>
 	</div>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/common.js"></script>	
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.0/umd/popper.min.js"></script>
-	
+	<script type="text/javascript" src="js/common.js"></script>
+	<!-- <script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script> -->
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.0/umd/popper.min.js"> -->
+	</script>
+	<script type="text/javascript">
+		$('.dropdown-toggle').dropdown()
+
+		/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+			document.getElementById("main").style.marginLeft = "250px";
+		}
+
+		/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+			document.getElementById("main").style.marginLeft = "0";
+		}
+	</script>
+
+	<script>
+		//Side menu//
+		$('.menu-toggle').on('click', function (e) {
+			e.preventDefault();
+			e.stopPropagation();
+			$('.side-menu').toggleClass('open');
+			$('.overlay').toggleClass('open');
+
+			$(document).one('click', function closeMenu(e) {
+				if ($('.side-menu').has(e.target).length === 0) {
+					$('.side-menu').removeClass('open');
+					$('.overlay').removeClass('open');
+
+				} else {
+					$(document).one('click', closeMenu);
+				}
+			});
+		});
+	</script>
 </body>
+
 </html>

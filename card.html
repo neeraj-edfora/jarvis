@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Jarvis</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="stylesheet/css/styles.css">
+	<link rel="stylesheet" type="text/css"
+		href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap">
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css"
+		href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<nav>
+				<div class="mobile">
+					<a class="menu-toggle">
+						<svg id="menu-bar" xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+							<path style="fill: #fff;" fill-rule="evenodd" clip-rule="evenodd"
+								d="M0 12h18v-2H0v2zm0-5h18V5H0v2zm0-7v2h18V0H0z" />
+						</svg>
+					</a>
+
+					<a href=""><img src="img/short-white-logo.svg" width="30" alt="Logo" /></a>
+
+				</div>
+				<ul>
+					<li>
+						<a href="">
+							<img src="img/mypat-white-logo.svg" width="100" alt="Logo" />
+						</a>
+					</li>
+					<li><a href="#">
+							Dashboard</a>
+					</li>
+					<li class="active"><a href="#">
+							TESTS</a>
+					</li>
+					<li><a href="#">
+							COMMUNITY</a>
+					</li>
+					<li><a href="#">
+							Revision</a>
+					</li>
+				</ul>
+
+				<ul class="login-block">
+					<div class="after-login" style="display: none;">
+						<!--show this blocks on login-->
+						<li>
+							<a href="#">
+								<img src="img/notifications-bell.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#" class="avatar">
+								<img src="img/default-avatar.png" alt="">
+							</a>
+						</li>
+					</div>
+					<div class="before-login">
+						<li><a href="#" class="btn btn-primary login">Login</a></li>
+						<li><a href="#" class="btn btn-outline-primary signup">Sign Up</a></li>
+					</div>
+
+				</ul>
+
+				<div class="side-menu">
+					<div class="sidebar-header">
+						<div class="head">
+							<img src="img/logo-mypat2.png" alt="" width="75">
+							<div class="login-block">
+								<div class="after-login">
+
+									<a href="#" class="avatar">
+										<img src="img/default-avatar.png" alt="">
+									</a>
+
+								</div>
+								<div class="before-login" style="display: none;">
+									<!--Hide this blocks on login-->
+									<a href="#" class="btn btn-primary login">Login</a>
+									<a href="#" class="btn btn-outline-primary signup">Sign Up</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="sidebar-body">
+
+						<ul class="before-login" style="display: none;">
+							<!--hide this blocks on login-->
+							<li><a href="#"><img src="img/courses-icon.svg" alt="">Coureses</a></li>
+							<li><a href="#"><img src="img/exams-icon.svg" alt="">My Exams</a></li>
+							<li><a href="#"><img src="img/resources.svg" alt="">Resources</a></li>
+							<li class="dropdown"><a class="dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+									aria-haspopup="true" aria-expanded="false" href="#">
+									<img src="img/community-icon.svg" alt="">COMMUNITY</a>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+									<button class="dropdown-item" type="button">My Feed </button>
+									<button class="dropdown-item" type="button">My Questions <span class="ques-count">(20)</span></button>
+									<button class="dropdown-item" type="button">My answers <span class="ques-count">(20)</span></button>
+								</div>
+							</li>
+							<li><a href="#"><img src="img/gift-icon.svg" alt="">Refer & Earn</a></li>
+						</ul>
+
+						<ul class="after-login">
+							<li><a href="#"><img src="img/dashboard-icon.svg" alt="">Dashboard </a></li>
+							<li><a href="#"><img src="img/exams-icon.svg" alt="">Assignment</a></li>
+							<li class="dropdown"><a class="dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+									aria-haspopup="true" aria-expanded="false" href="#">
+									<img src="img/community-icon.svg" alt="">COMMUNITY</a>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+									<button class="dropdown-item" type="button">My Feed </button>
+									<button class="dropdown-item" type="button">My Questions <span class="ques-count">(20)</span></button>
+									<button class="dropdown-item" type="button">My answers <span class="ques-count">(20)</span></button>
+								</div>
+							</li>
+							<li><a href="#"><img src="img/gift-icon.svg" alt="">Refer & Earn</a></li>
+						</ul>
+					</div>
+
+
+					<div class="sidebar-footer">
+						<a href="#" class="download-now-btn btn btn-primary">
+							<img src="img/play-store-icon.svg" alt=""> Download App</a>
+					</div>
+				</div>
+		</div>
+		<div class="overlay"></div>
+		</nav>
+		</div>
+	</header>
+	<div class="navabar__grub">
+		<div class="sidebar__navbar active">
+			<span></span>
+			<div class="px-3 py-4 position-relative">
+				<a href="#!" class="brand__sidebar d-block text-center"><img src="./img/mypat.svg" width="80" title="myPAT"
+						alt="myPAT"></a>
+				<h4 class="heading">Components</h4>
+				<ul class="sidebar__list--menu mt-3">
+					<!-- <li><a href="accordian.html" class="active">Accordian</a></li> -->
+					<!-- <li><a href="alert.html" class="">Alert</a></li> -->
+					<li><a href="buttons.html" class="">Buttons</a></li>
+					<li><a href="color.html" class="">Color</a></li>
+					<li><a href="card.html" class="">Card</a></li>
+					<li><a href="casousel.html" class="">Carousel</a></li>
+					<!-- <li><a href="dropdown.html" class="">Dropdown</a></li> -->
+					<li><a href="empty.html" class="">Empty State</a></li>
+					<li><a href="heading.html" class="">Heading</a></li>
+					<li><a href="input.html" class="">Inputs</a></li>
+					<!-- <li><a href="navigation.html" class="">Navigation</a></li>	 -->
+					<li><a href="popup.html" class="">Popup</a></li>
+					<li><a href="bread-pagination.html" class="">Paginatin and Breadcrumbs</a></li>
+					<li><a href="progress-bar.html" class="">Progress bar</a></li>
+					<li><a href="tabs.html" class="">Tabs</a></li>
+					<li><a href="tag-chips.html" class="">Tags and Chips</a></li>
+					<li><a href="toaster.html" class="">Toaster Alert</a></li>
+					<li><a href="tooltip.html" class="">Tooltip</a></li>
+
+				</ul>
+			</div>
+		</div>
+		<div class="sidebar__content">
+			<nav class="navbar navbar-expand-md sidebar__side p-3">
+				<a class="navabar__menu position-relative d-inline-block" href="#">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</a>
+			</nav>
+			<section class="pt-0 px-3 designsection accordian">
+				<div class="col-md-11">
+					<h1>Card</h1>
+
+					<div class="position-relative" id="#p1">
+						<ul class="nav nav-tabs">
+							<li class="active"><a data-toggle="tab" href="#design">Design</a></li>
+							<li><a data-toggle="tab" href="#css">CSS</a></li>
+							<li><a data-toggle="tab" href="#scss">SCSS</a></li>
+							<li><a data-toggle="tab" href="#nghtml">NG HTML</a></li>
+							<li><a data-toggle="tab" href="#ts">TS</a></li>
+						</ul>
+
+						<div class="tab-content">
+							<div id="design" class="tab-pane fade in active show">
+								<!-- custom card -->
+								<div class="bd-example">
+									<div class="card borderLeft">
+										<div class="card-body">
+											<img src="img/math.svg">
+											<div class="body-content">
+												<div>
+													<h4 class="heading"><b>Mathematics</b></h4>
+													<p class="sub-heading">0/13 Chapters</p>
+												</div>
+											</div>
+											<div class="content-right">
+												<div class="circlePercent percentMore" data-percent="80">
+													<div class="circleInner">
+														<div class="roundPer" style="transform: rotate(468deg);"></div>
+													</div>
+													<div class="circleInbox"><span class="percentText">80%</span></div>
+												</div>
+												<a href="#!">Explore Chapter</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="highlight">
+									<pre>&lt;div class=&quot;card borderLeft&quot;&gt;</pre>
+									<pre>&lt;div class=&quot;card-body&quot;&gt;</pre>
+									<pre>&lt;img src=&quot;img/math.svg&quot;&gt;</pre>
+									<pre>&lt;div class=&quot;body-content&quot;&gt;</pre>
+									<pre>&lt;div&gt;</pre>
+									<pre>&lt;h4 class=&quot;heading&quot;&gt;&lt;b&gt;Mathematics&lt;/b&gt;&lt;/h4&gt;</pre>
+									<pre>&lt;p class=&quot;sub-heading&quot;&gt;0/13 Chapters&lt;/p&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre> &lt;/div&gt;</pre>
+									<pre>&lt;div class=&quot;content-right&quot;&gt;</pre>
+									<pre>&lt;div class=&quot;circlePercent percentMore&quot; data-percent=&quot;80&quot;&gt;</pre>
+									<pre>&lt;div class=&quot;circleInner&quot;&gt;</pre>
+									<pre>&lt;div class=&quot;roundPer&quot; style=&quot;transform: rotate(468deg);&quot;&gt;&lt;/div&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre>&lt;div class=&quot;circleInbox&quot;&gt;&lt;span class=&quot;percentText&quot;&gt;80%&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;</pre>
+									<pre>&lt;a href=&quot;#!&quot;&gt;Explore Chapter&lt;/a&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+								</div>
+								<!--  -->
+								<div class="bd-example">
+									<div class="card">
+										<div class="card-body">
+											<img src="img/math.svg">
+											<div class="body-content">
+												<div>
+													<h4 class="heading"><b>Mathematics</b></h4>
+													<p class="sub-heading">0/13 Chapters</p>
+												</div>
+											</div>
+											<div class="content-right">
+												<div class="circlePercent percentMore" data-percent="80">
+													<div class="circleInner">
+														<div class="roundPer" style="transform: rotate(468deg);"></div>
+													</div>
+													<div class="circleInbox"><span class="percentText">80%</span></div>
+												</div>
+												<a href="#!">Explore Chapter</a>
+											</div>
+										</div>
+										<div class="card-footer">
+											Card footer
+										</div>
+									</div>
+								</div>
+								<div class="highlight">
+									<pre>&lt;div class=&quot;card&quot;&gt;</pre>
+									<pre> &lt;div class=&quot;card-body&quot;&gt;</pre>
+									<pre>&lt;img src=&quot;img/math.svg&quot;&gt;</pre>
+									<pre>&lt;div class=&quot;body-content&quot;&gt;</pre>
+									<pre>&lt;div&gt;</pre>
+									<pre>&lt;h4 class=&quot;heading&quot;&gt;&lt;b&gt;Mathematics&lt;/b&gt;&lt;/h4&gt;</pre>
+									<pre>&lt;p class=&quot;sub-heading&quot;&gt;0/13 Chapters&lt;/p&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre>&lt;div class=&quot;content-right&quot;&gt;</pre>
+									<pre>&lt;div class=&quot;circlePercent percentMore&quot; data-percent=&quot;80&quot;&gt;</pre>
+									<pre>&lt;div class=&quot;circleInner&quot;&gt;</pre>
+									<pre>&lt;div class=&quot;roundPer&quot; style=&quot;transform: rotate(468deg);&quot;&gt;&lt;/div&gt;</pre>
+									<pre> &lt;/div&gt;</pre>
+									<pre>&lt;div class=&quot;circleInbox&quot;&gt;&lt;span class=&quot;percentText&quot;&gt;80%&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;</pre>
+									<pre>&lt;a href=&quot;#!&quot;&gt;Explore Chapter&lt;/a&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre>&lt;div class=&quot;card-footer&quot;&gt;</pre>
+									Card footer
+									<pre>&lt;/div&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+								</div>
+								<!--  -->
+								<div class="bd-example">
+									<div class="card">
+										<div class="card-body">
+											<div class="body-content">
+												<div>
+													<small class="small-heading">Chapter 1</small>
+													<h4 class="heading"><b>Mathematics</b></h4>
+													<p class="sub-heading">0/13 Chapters <span class="redTag">Free</span></p>
+												</div>
+											</div>
+											<div class="content-right">
+												<div class="circlePercent percentMore" data-percent="80">
+													<div class="circleInner">
+														<div class="roundPer" style="transform: rotate(468deg);"></div>
+													</div>
+													<div class="circleInbox"><span class="percentText">80%</span></div>
+												</div>
+												<a href="#!">Explore Chapter</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="highlight">
+									<pre>&lt;div class=&quot;card&quot;&gt;</pre>
+									<pre>&lt;div class=&quot;card-body&quot;&gt;</pre>
+									<pre>&lt;div class=&quot;body-content&quot;&gt;</pre>
+									<pre>&lt;div&gt;</pre>
+									<pre>&lt;small class=&quot;small-heading&quot;&gt;Chapter 1&lt;/small&gt;</pre>
+									<pre>&lt;h4 class=&quot;heading&quot;&gt;&lt;b&gt;Mathematics&lt;/b&gt;&lt;/h4&gt;</pre>
+									<pre>&lt;p class=&quot;sub-heading&quot;&gt;0/13 Chapters &lt;span class=&quot;redTag&quot;&gt;Free&lt;/span&gt;&lt;/p&gt;</pre>
+									<pre>&lt;/div&gt;	</pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre>&lt;div class=&quot;content-right&quot;&gt;</pre>
+									<pre>&lt;div class=&quot;circlePercent percentMore&quot; data-percent=&quot;80&quot;&gt;</pre>
+									<pre>&lt;div class=&quot;circleInner&quot;&gt;</pre>
+									<pre>&lt;div class=&quot;roundPer&quot; style=&quot;transform: rotate(468deg);&quot;&gt;&lt;/div&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre>&lt;div class=&quot;circleInbox&quot;&gt;&lt;span class=&quot;percentText&quot;&gt;80%&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;</pre>
+									<pre>&lt;a href=&quot;#!&quot;&gt;Explore Chapter&lt;/a&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+								</div>
+								<!--  -->
+								<div class="bd-example">
+									<div class="card">
+										<div class="card-body">
+											<div class="body-content">
+												<div>
+													<h4 class="heading"><b>Mathematics</b></h4>
+													<p class="sub-heading"><span class="tags success">Live</span> 14 Aug 2019 </p>
+												</div>
+											</div>
+											<div class="content-right">
+												<a href="#!">View Details</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="highlight">
+									<pre>&lt;div class=&quot;card&quot;&gt;</pre>
+									<pre>&lt;div class=&quot;card-body&quot;&gt;</pre>
+									<pre>&lt;div class=&quot;body-content&quot;&gt;</pre>
+									<pre>&lt;div&gt;</pre>
+									<pre>&lt;h4 class=&quot;heading&quot;&gt;&lt;b&gt;Mathematics&lt;/b&gt;&lt;/h4&gt;</pre>
+									<pre>&lt;p class=&quot;sub-heading&quot;&gt;&lt;span class=&quot;tags success&quot;&gt;Live&lt;/span&gt; 14 Aug 2019 &lt;/p&gt;</pre>
+									<pre>&lt;/div&gt;	</pre>
+									<pre> &lt;/div&gt;</pre>
+									<pre>&lt;div class=&quot;content-right&quot;&gt;</pre>
+									<pre>&lt;a href=&quot;#!&quot;&gt;View Details&lt;/a&gt;</pre>
+									<pre> &lt;/div&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+								</div>
+								<!--  -->
+								<div class="bd-example">
+									<div class="card">
+										<div class="card-body">
+											<div class="body-content">
+												<div>
+													<h4 class="heading"><b>Mathematics</b></h4>
+													<p class="sub-heading"><img src="img/time.svg"> 180 MIN <span class="tags success">Live</span>
+														<small>1d ago</small></p>
+												</div>
+											</div>
+											<div class="content-right">
+												<button type="submit" class="btn ms hover">Attempt</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="highlight">
+									<pre>&lt;div class=&quot;card&quot;&gt;</pre>
+									<pre>&lt;div class=&quot;card-body&quot;&gt;</pre>
+									<pre>&lt;div class=&quot;body-content&quot;&gt;</pre>
+									<pre>&lt;div&gt;</pre>
+									<pre>&lt;h4 class=&quot;heading&quot;&gt;&lt;b&gt;Mathematics&lt;/b&gt;&lt;/h4&gt;</pre>
+									<pre>&lt;p class=&quot;sub-heading&quot;&gt;&lt;img src=&quot;img/time.svg&quot;&gt; 180 MIN &lt;span class=&quot;tags success&quot;&gt;Live&lt;/span&gt; &lt;small&gt;1d ago&lt;/small&gt;&lt;/p&gt;</pre>
+									<pre>&lt;/div&gt;	</pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre> &lt;div class=&quot;content-right&quot;&gt;</pre>
+									<pre>&lt;button type=&quot;submit&quot; class=&quot;btn ms hover&quot;&gt;Attempt&lt;/button&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+									<pre>&lt;/div&gt;</pre>
+								</div>
+								<!--  -->
+								<div class="bd-example">
+									<div class="card cardSize">
+										<div class="card-header steel">
+											Your Planned Course
+										</div>
+										<div class="card-body">
+											<div class="body-content fullWidth">
+												<div>
+													<b>JEE (M), JEE (A), BITSAT, KVPY</b>
+													<p>Created by <img src="img/fiitjee.svg"> <span class="tags alert">24 Months Course</span></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- End -->
+							</div>
+							<div id="html" class="tab-pane fade">
+								<figure class="bd-example">
+									jhj
+								</figure>
+							</div>
+							<div id="css" class="tab-pane fade">
+								<div class="bd-example">
+									<pre>No data</pre>
+									<div class="copyContent">
+										<a href="#!" onclick="copyToClipboard('#p1')">Copy</a>
+									</div>
+								</div>
+							</div>
+
+							<div id="scss" class="tab-pane fade">
+								<div class="bd-example">
+									<pre>No data</pre>
+									<div class="copyContent">
+										<a href="#!" onclick="copyToClipboard('#p1')">Copy</a>
+									</div>
+								</div>
+							</div>
+							<div id="nghtml" class="tab-pane fade">
+								<div class="bd-example">
+									<pre>No data</pre>
+									<div class="copyContent">
+										<a href="#!" onclick="copyToClipboard('#p1')">Copy</a>
+									</div>
+								</div>
+							</div>
+							<div id="ts" class="tab-pane fade">
+								<div class="bd-example">
+									<pre>No data</pre>
+									<div class="copyContent">
+										<a href="#!" onclick="copyToClipboard('#p1')">Copy</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.0/umd/popper.min.js">
+	</script>
+
+</body>
+
+</html>

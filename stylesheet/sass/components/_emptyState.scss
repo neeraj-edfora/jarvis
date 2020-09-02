@@ -1,0 +1,22 @@
+@import "../helpers/variable";
+
+.emptyState {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+	text-align: center;
+
+	h4 {
+		font-weight: bold;
+		font-size: 24px;
+		color: #333;
+		margin-bottom: 12px;
+	}
+
+	p {
+		font-size: 16px;
+		line-height: 22px;
+		color: #333;
+	}
+}

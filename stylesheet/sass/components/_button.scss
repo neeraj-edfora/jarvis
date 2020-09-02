@@ -1,0 +1,158 @@
+
+@import "../helpers/variable";
+
+@mixin breakpoint($media) {
+  @if $media==xs {
+    @media only screen and (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+      @content;
+    }
+  }
+
+  @else if $media==sm {
+    @media only screen and (min-width: $tablet-width-min) and (max-width: $desktop-width) {
+      @content;
+    }
+  }
+
+  @else if $media==md {
+    @media only screen and (min-width: $desktop-width) and (max-width: $desktop-width-min) {
+      @content;
+    }
+  }
+}
+
+%btn-bs {
+  padding: size(10) size(32);
+  height: size(44);
+}
+
+%btn-ms {
+  padding: size(8) size(24);
+  font-size: $font-secondary;
+  height: size(36);
+}
+
+%btn-ss {
+  padding: size(4) size(16);
+  font-size: $font-small;
+  height: size(28);
+}
+
+%btn-primary {
+  color: $white;
+  background-color: $color-primary;
+}
+
+%btn-outline-primary {
+  color: $color-primary;
+  border: 1px solid $btn-primary-border;
+  background-color: $white;
+
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+%btn-text-primary {
+  color: $color-primary;
+  background-color: transparent;
+}
+
+%btn-primary-hover {
+  background-color: $color-primary-hover;
+}
+
+%disabled {
+  background-color: $disabled;
+}
+
+.btn {
+  border: 0px;
+  box-shadow: none;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  line-height: 1.5;
+  cursor: pointer;
+  outline: none;
+
+  &.bs {
+    // @extend %borderRadius-small;
+    @extend %btn-bs;
+    @extend %btn-primary;
+
+    @include breakpoint(xs) {
+      font-size: $font-small;
+      padding: size(4) size(16);
+      height: size(28);
+    }
+
+    @include breakpoint(sm) {
+      font-size: $font-secondary;
+      padding: size(8) size(24);
+      height: size(36);
+    }
+
+    @include breakpoint(md) {
+      font-size: $font-primary;
+      padding: size(10) size(32);
+      height: size(44);
+    }
+
+    &.hover:hover {
+      @extend %btn-primary-hover;
+    }
+  }
+
+  &.ms {
+    @extend %btn-ms;
+    // @extend %borderRadius-small;
+    @extend %btn-primary;
+
+    @include breakpoint(xs) {
+      font-size: $font-small;
+      padding: size(4) size(16);
+      height: size(28);
+    }
+
+    @include breakpoint(sm) {
+      font-size: $font-secondary;
+      padding: size(8) size(24);
+      height: size(36);
+    }
+
+    @include breakpoint(md) {
+      font-size: $font-primary;
+      padding: size(8) size(24);
+      height: size(44);
+    }
+
+    &.hover:hover {
+      @extend %btn-primary-hover;
+    }
+  }
+
+  &.ss {
+    @extend %btn-ss;
+    // @extend %borderRadius-small;
+    @extend %btn-primary;
+
+    &.hover:hover {
+      @extend %btn-primary-hover;
+    }
+  }
+
+  &.outline {
+    @extend %btn-outline-primary;
+  }
+
+  &.disabled {
+    @extend %disabled;
+    pointer-events: none;
+  }
+
+  &.text {
+    @extend %btn-text-primary;
+  }
+}

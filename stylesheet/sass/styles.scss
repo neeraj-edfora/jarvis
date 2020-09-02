@@ -1,3 +1,16 @@
-@import "components/button";
-@import "components/variable";
+@import "helpers/variable";
+@import "layout/header";
+@import "layout/sidebar";
+
 @import "components/heading";
+@import "components/button";
+@import "components/card";
+@import "components/emptyState";
+@import "components/input";
+@import "components/popup";
+@import "components/bread-pagination";
+@import "components/progressbar";
+@import "components/tab";
+@import "components/tagsChips";
+@import "components/toaster";
+@import "components/tooltip";

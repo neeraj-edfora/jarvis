@@ -1,0 +1,141 @@
+@import "../helpers/variable";
+
+.tosterWidth {
+	width: size(440);
+}
+
+.toster {
+	border: 1px solid $border-color;
+	padding: size(11) size(12);
+	box-shadow: $shaddow;
+	border-radius: size(8);
+	display: flex;
+	position: relative;
+	width: size(440);
+
+	&::before {
+		content: "";
+		width: size(6);
+		height: 72px;
+		max-height: 72px;
+		border-radius: $line-radius;
+		position: absolute;
+		top: 12px;
+		left: 12px;
+
+		@include breakpoint(sm) {
+			display: none;
+		}
+	}
+
+	&.red {
+		&::before {
+			background-color: $red;
+		}
+	}
+
+	&.success {
+		&::before {
+			background-color: $color-success-color;
+		}
+	}
+
+	&.warning {
+		&::before {
+			background-color: $warning-color;
+		}
+	}
+
+	&.notification {
+		&::before {
+			background-color: $color-primary;
+		}
+	}
+
+	.toster-inner {
+		display: flex;
+		justify-content: start;
+		align-items: center;
+
+		.icon {
+			margin-bottom: auto;
+			margin-top: auto;
+			margin-left: 22px;
+
+			@include breakpoint(sm) {
+				display: none;
+			}
+		}
+
+		.toster-content {
+			flex-flow: column;
+			padding: size(14) 0;
+
+			@include breakpoint(sm) {
+				padding: size(4) 0;
+			}
+
+			b {
+				font-weight: bold;
+				font-size: size(16);
+				color: $black-base;
+				margin-left: size(22);
+
+				@include breakpoint(sm) {
+					color: $white;
+					font-size: size(16);
+				}
+
+				@include breakpoint(xs) {
+					font-size: size(14);
+				}
+			}
+
+			p {
+				font-size: 14px;
+				color: $lightblack;
+				margin-left: size(22);
+				margin-bottom: 0;
+				margin-top: size(6);
+
+				@include breakpoint(sm) {
+					color: $white;
+				}
+
+				@include breakpoint(xs) {
+					font-size: size(14);
+				}
+			}
+
+		}
+
+		.close {
+			position: absolute;
+			right: size(30);
+
+			a {
+				color: $black-base;
+				font-size: size(24);
+
+				&:hover {
+					text-decoration: none;
+					color: $black-base;
+				}
+			}
+
+			@include breakpoint(sm) {
+				color: $white;
+			}
+		}
+	}
+
+	@include breakpoint(sm) {
+		background-color: $bg-color;
+		border-radius: 0;
+	}
+
+	@include breakpoint(xs) {
+		background-color: $bg-color;
+		border-radius: 0;
+	}
+}
