@@ -1,5 +1,8 @@
 # Jarvis
 
+Jarvis a UI framework for building responsive, mobile-first sites.
+Built on the top of Bootstrap.
+
 Sass Commands
 
 ## For watch whole directory
